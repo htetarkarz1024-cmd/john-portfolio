@@ -843,7 +843,7 @@
     cursor: default;
     transition: transform 0.2s, opacity 0.2s;
     user-select: none;
-    opacity: 0.75;
+    opacity: 1;
   }
   .logo-card:hover {
     transform: translateY(-3px);
@@ -856,7 +856,11 @@
     height: auto;
     object-fit: contain;
     display: block;
-    filter: none;
+    filter: saturate(1.4) contrast(1.1) brightness(1.05);
+    transition: filter 0.2s;
+  }
+  .logo-card:hover img {
+    filter: saturate(1.8) contrast(1.15) brightness(1.1);
   }
   .logo-caption {
     font-size: 0.6rem;
@@ -1026,7 +1030,7 @@
             <div class="exp-company">MCIX Agency</div>
             <div class="exp-role">Digital Specialist</div>
           </div>
-          <span class="exp-duration">2021 · 11 mos · Myanmar</span>
+          <span class="exp-duration">2023 · 1 year</span>
         </div>
         <ul class="exp-bullets">
           <li>Developed and executed digital marketing strategies at one of Myanmar's leading agencies</li>
@@ -1041,7 +1045,7 @@
             <div class="exp-company">Upscale</div>
             <div class="exp-role">Performance Marketer · Freelancer</div>
           </div>
-          <span class="exp-duration">Mar 2025 – Sep 2025 · 7 mos</span>
+          <span class="exp-duration">2024 · 5 months</span>
         </div>
         <ul class="exp-bullets">
           <li>Managed full-cycle paid ad campaigns for health &amp; beauty and aesthetic &amp; physiotherapy clinics across Asia</li>
@@ -1056,7 +1060,7 @@
             <div class="exp-company">Invade Marketing</div>
             <div class="exp-role">Digital Marketing Specialist</div>
           </div>
-          <span class="exp-duration">2023 · Present · Phuket, TH</span>
+          <span class="exp-duration">2024 · Present</span>
         </div>
         <ul class="exp-bullets">
           <li>Manages Google, Facebook &amp; Instagram campaigns for hospitality and lifestyle brands in Thailand and Indonesia</li>
@@ -1071,7 +1075,7 @@
             <div class="exp-company">Cadence Digital Marketing Agency</div>
             <div class="exp-role">Digital Marketing Specialist · Freelancer</div>
           </div>
-          <span class="exp-duration">2024 · Present</span>
+          <span class="exp-duration">2026 · Present</span>
         </div>
         <ul class="exp-bullets">
           <li>Manages multi-platform paid campaigns across Google and Meta for agency clients</li>
