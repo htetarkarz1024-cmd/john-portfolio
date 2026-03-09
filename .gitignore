@@ -1,0 +1,13 @@
+# Internal agent files
+.env
+tools/
+workflows/
+.tmp/
+config/
+*.csv
+*.pdf
+CLAUDE.md
+credentials.json
+token.json
+image.png
+memory/
