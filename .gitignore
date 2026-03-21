@@ -9,5 +9,5 @@ config/
 CLAUDE.md
 credentials.json
 token.json
-image.png
+/image.png
 memory/
