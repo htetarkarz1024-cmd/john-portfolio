@@ -11,3 +11,14 @@ credentials.json
 token.json
 /image.png
 memory/
+
+# Local-only files — never publish (credentials, editor/tool state, internal drafts)
+.DS_Store
+.claude/
+.playwright-mcp/
+gws json/
+client_secret*.json
+Mail Chimp Images/
+email-belters-only.html
+cv-print.html
+website-print.html
