@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found — John</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#082c4b">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: dark; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { background: #082c4b; }
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    padding-top: calc(1.5rem + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+    background: #082c4b;
+    color: #fff;
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+  .mark {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0 0 2.5rem;
+  }
+  .mark span { color: #ee212b; }
+  .rule {
+    width: 44px;
+    height: 2px;
+    background: #ee212b;
+    margin: 0 0 1.5rem;
+  }
+  h1 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 7vw, 3.25rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 1rem;
+    color: #fff;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0 0 2rem;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+  }
+  .btn {
+    display: inline-block;
+    background: #ee212b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.95rem 1.5rem;
+    border-radius: 999px;
+  }
+  .btn:hover,
+  .btn:focus-visible { background: #d11a23; }
+  .btn:focus-visible,
+  .link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  .link {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: rgba(255, 255, 255, 0.45);
+  }
+  .link:hover { text-decoration-color: #fff; }
+  .code {
+    margin: 3rem 0 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mark">John<span>.</span></div>
+    <div class="rule"></div>
+    <h1>That page isn't here.</h1>
+    <p>The link may be old. Everything is on the homepage.</p>
+    <nav class="actions" aria-label="Where to go next">
+      <a class="btn" href="/">Back to the homepage</a>
+      <a class="link" href="/case-studies.html">Case studies</a>
+    </nav>
+    <p class="code">Error 404 · johnfreelance.online</p>
+  </main>
+</body>
+</html>

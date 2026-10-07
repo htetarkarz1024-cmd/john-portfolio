@@ -3,1570 +3,778 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>John — Performance Marketer</title>
-<meta name="description" content="John is a Bangkok-based performance marketer running Meta, Google and TikTok ads for hotels, restaurants and beach clubs across Thailand and Southeast Asia, with tracked bookings, sales and ROAS.">
+<title>John — Paid Media for Hospitality | Meta & Google Ads, Bangkok</title>
+<meta name="description" content="Meta, Google and TikTok ads for hotel restaurants, beach clubs, restaurants and spas in Thailand, with bookings tracked. Freelance paid media, Bangkok.">
+<link rel="canonical" href="https://www.johnfreelance.online/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="John — Paid Media for Hospitality">
 <meta property="og:url" content="https://www.johnfreelance.online/">
-<meta property="og:title" content="John — Performance Marketer">
-<meta property="og:description" content="Paid media for hospitality brands across Thailand and Southeast Asia: Meta, Google and TikTok campaigns with tracked results.">
-<meta property="og:image" content="https://www.johnfreelance.online/John%20Website%20Images/image.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:title" content="John — Paid media for hospitality, measured in bookings">
+<meta property="og:description" content="Meta, Google and TikTok ads for hotel restaurants, beach clubs, restaurants and spas in Thailand. Results tracked in the venue's booking system.">
+<meta property="og:image" content="https://www.johnfreelance.online/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Paid media for hospitality, measured in bookings. John, Bangkok.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":"https://www.johnfreelance.online/#john","name":"John","alternateName":"Htet Arkar","jobTitle":"Freelance Paid Media Specialist","url":"https://www.johnfreelance.online/","image":"https://www.johnfreelance.online/John%20Website%20Images/john-720.webp","sameAs":["https://www.linkedin.com/in/john-digital-specialist/"],"address":{"@type":"PostalAddress","addressLocality":"Bangkok","addressCountry":"TH"},"knowsAbout":["Meta Ads","Google Ads","TikTok Ads","Conversion tracking","Hospitality marketing"]},
+ {"@type":"ProfessionalService","name":"John — Paid Media for Hospitality","url":"https://www.johnfreelance.online/","founder":{"@id":"https://www.johnfreelance.online/#john"},"areaServed":["Thailand","Southeast Asia"],"serviceType":["Paid media management","Meta Ads","Google Ads","TikTok Ads","Conversion tracking setup"],"address":{"@type":"PostalAddress","addressLocality":"Bangkok","addressCountry":"TH"},"telephone":"+66994928394","email":"htetarkarz1024@gmail.com"}
+]}
+</script>
+<!-- SHARED:head -->
+<meta name="theme-color" content="#082c4b">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<!-- /SHARED:head -->
 
+<!-- SHARED:style -->
 <style>
   :root {
     --navy: #082c4b;
-    --navy-light: #0e3d6b;
     --red: #ee212b;
-    --red-light: #ff3b44;
+    --red-text: #d71920;
+    --red-dark: #c8102e;
     --white: #ffffff;
     --light: #f8f7f4;
     --light2: #f0ede8;
-    --gray: #8a8a8a;
+    --gray: #6b6b6b;
     --gray-light: #d4d0c9;
     --text: #1a1a1a;
     --text-muted: #555;
+    --fs-label: 0.75rem;
+    --fs-small: 0.875rem;
+    --fs-body: 1rem;
+    --fs-lead: 1.1875rem;
+    --track: 0.14em;
+    --nav-h: 64px;
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; font-size: 16px; }
-
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body {
     font-family: var(--font-body);
     color: var(--text);
     background: var(--white);
-    line-height: 1.7;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
-
+  img { max-width: 100%; height: auto; }
   a { color: inherit; text-decoration: none; }
-  a:hover { color: var(--red); }
+  :focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+  .skip {
+    position: absolute; left: 1rem; top: -120px; z-index: 300;
+    background: var(--red-text); color: #fff; padding: 0.6rem 1rem; border-radius: 2px; font-weight: 600;
+  }
+  .skip:focus { top: 1rem; }
 
-  /* ── FADE IN ANIMATION ── */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.65s ease, transform 0.65s ease;
-  }
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .fade-in.delay-1 { transition-delay: 0.1s; }
-  .fade-in.delay-2 { transition-delay: 0.2s; }
-  .fade-in.delay-3 { transition-delay: 0.3s; }
-  .fade-in.delay-4 { transition-delay: 0.4s; }
+  /* ── REVEAL ON SCROLL (only when JS is running) ── */
+  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .js .fade-in.visible { opacity: 1; transform: none; }
+  .js .fade-in.d1 { transition-delay: 0.08s; }
+  .js .fade-in.d2 { transition-delay: 0.16s; }
+  .js .fade-in.d3 { transition-delay: 0.24s; }
 
   /* ── NAV ── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--light2);
+  #siteNav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    height: var(--nav-h);
+    display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
     padding: 0 2rem;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background: rgba(8,44,75,0.94);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: var(--white);
   }
-  .nav-brand {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--navy);
-    letter-spacing: -0.02em;
-  }
+  .nav-brand { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; }
   .nav-brand span { color: var(--red); }
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
+  .nav-links { display: flex; gap: 1.75rem; list-style: none; margin-left: auto; }
   .nav-links a {
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    transition: color 0.2s;
+    display: inline-block; padding: 0.5rem 0;
+    font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.78); border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s;
   }
-  .nav-links a:hover { color: var(--red); }
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a[aria-current="page"] { color: var(--white); border-bottom-color: var(--red); }
+  .nav-cta {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.55rem 1rem; border-radius: 2px;
+    background: var(--red-text); color: var(--white);
+    font-size: var(--fs-small); font-weight: 700; letter-spacing: 0.02em; transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--red-dark); color: var(--white); }
+  .nav-hamburger {
+    display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+    width: 44px; height: 44px; margin-right: -8px;
+    background: none; border: none; cursor: pointer; border-radius: 2px;
+  }
+  .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-menu {
+    display: none; position: fixed; inset: 0; z-index: 150;
+    background: rgba(8,44,75,0.98);
+    padding: calc(var(--nav-h) + 1.5rem) 1.5rem 2rem;
+    flex-direction: column; justify-content: center; gap: 1.3rem; overflow-y: auto;
+  }
+  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; line-height: 1.1; }
+  .mobile-menu a:hover { color: var(--red); }
+  .mobile-menu .btn { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 700; letter-spacing: 0; margin-top: 0.6rem; align-self: stretch; }
+  body.menu-open .mobile-cta, body.cta-in-view .mobile-cta { display: none !important; }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+    padding: 0.95rem 1.7rem; border-radius: 2px; border: 1.5px solid transparent;
+    font-family: var(--font-body); font-size: 1rem; font-weight: 700; line-height: 1.2; letter-spacing: 0.01em;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s; cursor: pointer;
+  }
+  .btn svg { flex-shrink: 0; }
+  .btn-primary { background: var(--red-text); border-color: var(--red-text); color: var(--white); }
+  .btn-primary:hover { background: var(--red-dark); border-color: var(--red-dark); color: var(--white); transform: translateY(-1px); }
+  .btn-ghost { color: var(--white); border-color: rgba(255,255,255,0.35); }
+  .btn-ghost:hover { color: var(--white); border-color: var(--white); }
+  .btn-outline { color: var(--navy); border-color: var(--navy); }
+  .btn-outline:hover { background: var(--navy); color: var(--white); }
 
   /* ── HERO ── */
   #hero {
-    min-height: 100vh;
-    background: var(--navy);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 120px 2rem 80px;
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
+    min-height: 100vh; min-height: 100svh;
+    display: flex; align-items: center;
+    padding: calc(var(--nav-h) + 56px) 2rem 72px;
+    background-color: var(--navy);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
   }
   #hero::before {
-    content: '';
-    position: absolute;
-    top: -20%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(238,33,43,0.12) 0%, transparent 70%);
-    pointer-events: none;
+    content: ''; position: absolute; top: -25%; right: -15%; width: 820px; height: 820px;
+    background: radial-gradient(circle, rgba(238,33,43,0.16) 0%, transparent 65%); pointer-events: none;
   }
-  #hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--red) 0%, transparent 60%);
-  }
-  .hero-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
+  .hero-inner { position: relative; max-width: 1100px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; }
   .hero-label {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.6rem; order: 1;
+    font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--track); text-transform: uppercase; line-height: 1.5; color: rgba(255,255,255,0.75);
   }
-  .hero-label::before {
-    content: '';
-    display: inline-block;
-    width: 28px;
-    height: 2px;
-    background: var(--red);
-  }
+  .hero-label::before { content: ''; flex-shrink: 0; width: 28px; height: 2px; margin-top: 0.68em; background: var(--red); }
   .hero-name {
-    font-family: var(--font-display);
-    font-size: clamp(3rem, 8vw, 6.5rem);
-    font-weight: 900;
-    color: var(--white);
-    line-height: 1;
-    letter-spacing: -0.03em;
-    margin-bottom: 0.5rem;
+    order: 2;
+    font-family: var(--font-display); font-size: clamp(2.5rem, 6.2vw, 5rem); font-weight: 800;
+    color: var(--white); line-height: 1.04; letter-spacing: -0.025em; max-width: 15ch; text-wrap: balance;
+    margin-bottom: 1.4rem;
   }
-  .hero-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.2rem, 3vw, 2rem);
-    font-weight: 700;
-    color: rgba(255,255,255,0.45);
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.01em;
-  }
-  .hero-tagline {
-    font-size: clamp(1.25rem, 2.5vw, 1.65rem);
-    font-weight: 400;
-    color: rgba(255,255,255,0.82);
-    font-style: italic;
-    margin-bottom: 3rem;
-    max-width: 560px;
-    line-height: 1.5;
-  }
-  .hero-highlight-text {
-    display: inline;
-    background-image: linear-gradient(90deg, rgba(238,33,43,0.55) 0%, rgba(160,20,180,0.4) 100%);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 0% 115%;
-    padding: 0.05em 0.35em;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: 600;
-    font-style: normal;
-    animation: highlight-reveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) 1.8s forwards;
-  }
-  @keyframes highlight-reveal {
-    to { background-size: 100% 115%; }
-  }
-  @keyframes hero-bounce-in {
-    0%   { opacity: 0; transform: translateY(20px); }
-    55%  { opacity: 1; transform: translateY(-5px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  #hero .hero-label.visible   { animation: hero-bounce-in 0.55s cubic-bezier(0.4,0,0.2,1) 0s    both; }
-  #hero .hero-name.visible    { animation: hero-bounce-in 0.55s cubic-bezier(0.4,0,0.2,1) 0.12s both; }
-  #hero .hero-title.visible   { animation: hero-bounce-in 0.55s cubic-bezier(0.4,0,0.2,1) 0.22s both; }
-  #hero .hero-tagline.visible { animation: hero-bounce-in 0.55s cubic-bezier(0.4,0,0.2,1) 0.34s both; }
-  #hero .hero-stats.visible   { animation: hero-bounce-in 0.55s cubic-bezier(0.4,0,0.2,1) 0.48s both; }
-  #hero .hero-contact.visible { animation: hero-bounce-in 0.55s cubic-bezier(0.4,0,0.2,1) 0.58s both; }
-  /* ── HERO GRADIENT BACKGROUND ── */
-  .hero-dot-base {
-    position: absolute; inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    background-color: var(--navy);
-    background-image:
-      radial-gradient(ellipse 80% 60% at 20% 40%, rgba(238,33,43,0.35), transparent),
-      radial-gradient(ellipse 70% 70% at 80% 20%, rgba(80,130,255,0.25), transparent),
-      radial-gradient(ellipse 60% 80% at 60% 80%, rgba(160,80,255,0.20), transparent);
-    animation: hero-grad-shift 12s ease-in-out infinite alternate;
-  }
-  @keyframes hero-grad-shift {
-    0%   { background-image:
-              radial-gradient(ellipse 80% 60% at 20% 40%, rgba(238,33,43,0.35), transparent),
-              radial-gradient(ellipse 70% 70% at 80% 20%, rgba(80,130,255,0.25), transparent),
-              radial-gradient(ellipse 60% 80% at 60% 80%, rgba(160,80,255,0.20), transparent); }
-    33%  { background-image:
-              radial-gradient(ellipse 70% 80% at 70% 30%, rgba(238,33,43,0.30), transparent),
-              radial-gradient(ellipse 80% 60% at 15% 70%, rgba(80,160,255,0.28), transparent),
-              radial-gradient(ellipse 75% 65% at 85% 55%, rgba(200,60,255,0.18), transparent); }
-    66%  { background-image:
-              radial-gradient(ellipse 90% 50% at 40% 60%, rgba(200,40,43,0.32), transparent),
-              radial-gradient(ellipse 60% 75% at 75% 10%, rgba(60,100,255,0.22), transparent),
-              radial-gradient(ellipse 65% 90% at 25% 85%, rgba(140,60,255,0.22), transparent); }
-    100% { background-image:
-              radial-gradient(ellipse 75% 70% at 55% 25%, rgba(238,33,43,0.28), transparent),
-              radial-gradient(ellipse 85% 55% at 10% 50%, rgba(100,150,255,0.24), transparent),
-              radial-gradient(ellipse 70% 75% at 80% 75%, rgba(180,90,255,0.20), transparent); }
-  }
-  .hero-dot-hover {
-    position: absolute; inset: 0;
-    pointer-events: none;
-    background: radial-gradient(300px circle at var(--mx,50%) var(--my,50%), rgba(238,33,43,0.18) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 0;
-  }
-  #hero:hover .hero-dot-hover { opacity: 1; }
+  .hero-name em { font-style: italic; font-weight: 600; color: var(--red); }
+  .hero-sub { order: 3; font-size: var(--fs-lead); line-height: 1.6; color: rgba(255,255,255,0.82); max-width: 600px; margin-bottom: 2.4rem; }
   .hero-stats {
-    display: flex;
-    gap: 0;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+    order: 4; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 780px; border-top: 2px solid var(--red); margin-bottom: 2.4rem;
   }
-  .stat-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 1.5rem 2rem;
-    min-width: 170px;
-    position: relative;
-    overflow: hidden;
-    transition: background 0.2s;
-  }
-  .stat-card:first-child { border-left: 3px solid var(--red); }
-  .stat-card:hover { background: rgba(255,255,255,0.06); }
-  .stat-blob-wrap {
-    position: absolute; inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-    filter: blur(28px);
-    opacity: 0.55;
-    z-index: 0;
-  }
-  .stat-blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.3;
-    animation: stat-blob-drift var(--blob-speed, 15s) cubic-bezier(0.445,0.05,0.55,0.95) infinite;
-  }
-  @keyframes stat-blob-drift {
-    0%,100% { transform: translate(0, 0); }
-    20%      { transform: translate(calc(80px * var(--tx1, 0.4)), calc(60px * var(--ty1, 0.3))); }
-    40%      { transform: translate(calc(80px * var(--tx2,-0.3)), calc(60px * var(--ty2, 0.5))); }
-    60%      { transform: translate(calc(80px * var(--tx3, 0.5)), calc(60px * var(--ty3,-0.4))); }
-    80%      { transform: translate(calc(80px * var(--tx4,-0.2)), calc(60px * var(--ty4,-0.5))); }
-  }
-  .stat-card .stat-number,
-  .stat-card .stat-label { position: relative; z-index: 1; }
-  .stat-number {
-    font-family: var(--font-display);
-    font-size: 2.2rem;
-    font-weight: 900;
-    color: var(--white);
-    line-height: 1;
-    letter-spacing: -0.02em;
-  }
-  .stat-number .suffix { font-size: 1.4rem; }
-  .stat-label {
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.45);
-    margin-top: 0.4rem;
-  }
-  .hero-contact {
-    display: flex;
-    align-items: center;
-  }
-  /* ── NEON CONTACT BUTTON ── */
-  .btn-neon {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.9rem 2.2rem;
-    border-radius: 999px;
-    border: none;
-    background: var(--red);
-    color: #fff;
-    font-family: var(--font-body);
-    font-size: 0.92rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    overflow: hidden;
-    box-shadow: 0 0 24px rgba(238,33,43,0.55), 0 4px 16px rgba(0,0,0,0.35);
-    transition: background 0.25s, box-shadow 0.25s, transform 0.2s;
-  }
-  .btn-neon::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 999px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .btn-neon:hover {
-    background: var(--red-light);
-    box-shadow: 0 0 40px rgba(238,33,43,0.75), 0 6px 24px rgba(0,0,0,0.4);
-    transform: translateY(-2px);
-    color: #fff;
-  }
-  .btn-neon svg { flex-shrink: 0; transition: transform 0.2s; }
-  .btn-neon:hover svg { transform: translateX(4px); }
-  .hero-location {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.4);
-    letter-spacing: 0.05em;
-    margin-left: auto;
-  }
+  .stat { padding: 1.1rem 1.4rem 0; border-left: 1px solid rgba(255,255,255,0.14); }
+  .stat:first-child { border-left: 0; padding-left: 0; }
+  .stat-number { font-family: var(--font-display); font-size: clamp(2rem, 3.4vw, 2.8rem); font-weight: 900; color: var(--white); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: lining-nums tabular-nums; }
+  .stat-label { margin-top: 0.5rem; font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.35; color: rgba(255,255,255,0.72); }
+  .hero-cta { order: 5; display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: center; }
+  .hero-rise { animation: rise 0.6s ease both; }
+  .hero-sub.hero-rise { animation-delay: 0.1s; }
+  .hero-stats.hero-rise { animation-delay: 0.2s; }
+  .hero-cta.hero-rise { animation-delay: 0.3s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
-  /* ── SECTION BASE ── */
-  section { padding: 100px 2rem; }
-  .section-inner { max-width: 1100px; margin: 0 auto; }
-  .section-header {
-    margin-bottom: 3.5rem;
-    display: flex;
-    align-items: baseline;
-    gap: 1.5rem;
-  }
-  .section-tag {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--red);
-    white-space: nowrap;
-  }
-  .section-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 900;
-    color: var(--navy);
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-  }
-  .section-line {
-    flex: 1;
-    height: 1px;
-    background: var(--gray-light);
-  }
-
-  /* ── BIO ── */
-  #bio { background: var(--light); }
-  .bio-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-  }
-  .bio-photo {
-    flex-shrink: 0;
-    width: 180px;
-    height: 180px;
-    border-radius: 4px;
-    object-fit: cover;
-    object-position: center top;
-    border: 3px solid var(--white);
-    box-shadow: 6px 6px 0 var(--navy);
-  }
-  .bio-content { flex: 1; }
-  @media (max-width: 768px) {
-    .bio-layout { flex-direction: column; align-items: center; }
-    .bio-photo { width: 140px; height: 140px; }
-  }
-  .bio-text {
-    font-size: clamp(1.1rem, 2.2vw, 1.35rem);
-    font-weight: 300;
-    line-height: 1.75;
-    color: var(--text-muted);
-    max-width: 780px;
-  }
-  .bio-text strong { color: var(--navy); font-weight: 600; }
-
-  /* ── SKILLS ── */
-  #skills { background: var(--white); padding-top: 80px; padding-bottom: 80px; }
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-  .skill-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.55rem 1.1rem;
-    border: 1.5px solid var(--navy);
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--navy);
-    letter-spacing: 0.02em;
-    border-radius: 2px;
-    transition: all 0.2s;
-    cursor: default;
-  }
-  .skill-chip:hover {
-    background: var(--navy);
-    color: var(--white);
-  }
-  .skill-chip.highlight {
-    background: var(--red);
-    border-color: var(--red);
-    color: var(--white);
-  }
-  .skill-chip.highlight:hover {
-    background: var(--red-light);
-    border-color: var(--red-light);
-  }
-
-  /* ── EXPERIENCE ── */
-  #experience { background: var(--light); }
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 2px;
-    background: var(--gray-light);
-  }
-  .exp-item {
-    position: relative;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-  }
-  .exp-item:last-child { padding-bottom: 0; }
-  .exp-item::before {
-    content: '';
-    position: absolute;
-    left: -2rem;
-    top: 8px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--white);
-    border: 2.5px solid var(--gray-light);
-    transition: border-color 0.3s, background 0.3s;
-    margin-left: -4px;
-  }
-  .exp-item.current::before {
-    background: var(--red);
-    border-color: var(--red);
-  }
-  .exp-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.5rem;
-  }
-  .exp-company {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--navy);
-    letter-spacing: -0.01em;
-  }
-  .exp-role {
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--red);
-    letter-spacing: 0.02em;
-    margin-bottom: 0.75rem;
-  }
-  .exp-duration {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--gray);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    background: var(--light2);
-    padding: 0.25rem 0.7rem;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-  .exp-bullets {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-  }
-  .exp-bullets li {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    padding-left: 1rem;
-    position: relative;
-    line-height: 1.55;
-  }
-  .exp-bullets li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: var(--red);
-    font-weight: 700;
-  }
-
-  /* ── PORTFOLIO ── */
-  #portfolio { background: var(--white); }
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-    gap: 1.5px;
-    background: var(--gray-light);
-    border: 1.5px solid var(--gray-light);
-  }
-  .portfolio-card {
-    background: var(--white);
-    padding: 2rem;
-    position: relative;
-    transition: background 0.25s;
-    overflow: hidden;
-  }
-  .portfolio-card::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: var(--red);
-    transition: width 0.35s ease;
-  }
-  .portfolio-card:hover { background: var(--light); }
-  .portfolio-card:hover::after { width: 100%; }
-  .portfolio-card-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1.25rem;
-  }
-  .portfolio-name {
-    font-family: var(--font-display);
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--navy);
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-  }
-  .platform-badges {
-    display: flex;
-    gap: 0.3rem;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-  }
-  .platform-badge {
-    font-size: 0.62rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.5rem;
-    border-radius: 2px;
-    white-space: nowrap;
-  }
-  .platform-badge.meta { background: #e8f0fe; color: #1a73e8; }
-  .platform-badge.google { background: #fce8e6; color: #d32f2f; }
-  .platform-badge.tiktok { background: #000; color: #fff; }
-  .portfolio-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-  }
-  .metric {
-    text-align: left;
-  }
-  .metric-value {
-    font-family: var(--font-display);
-    font-size: 1.3rem;
-    font-weight: 900;
-    color: var(--navy);
-    line-height: 1;
-    letter-spacing: -0.02em;
-  }
-  .metric-label {
-    font-size: 0.65rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--gray);
-    margin-top: 0.25rem;
-  }
-  .portfolio-note {
-    margin-top: 1rem;
-    padding-top: 0.7rem;
-    border-top: 1px dashed var(--gray-light);
-    font-size: 0.68rem;
-    color: var(--gray);
-    letter-spacing: 0.02em;
-    line-height: 1.45;
-  }
-  .portfolio-link {
-    display: inline-block;
-    margin-top: 0.8rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--red);
-  }
-  .portfolio-link:hover { color: var(--navy); }
-  .portfolio-more { text-align: center; margin-top: 2.5rem; }
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.85rem 2rem;
-    border: 1.5px solid var(--navy);
-    border-radius: 999px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    color: var(--navy);
-    transition: background 0.2s, color 0.2s;
-  }
-  .btn-outline:hover { background: var(--navy); color: var(--white); }
-
-  /* ── CERTIFICATIONS ── */
-  #certifications { background: var(--light); }
-  .cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1rem;
-  }
-  .cert-card {
-    background: var(--white);
-    border: 1px solid var(--light2);
-    padding: 1.25rem 1.5rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-  .cert-card:hover {
-    border-color: var(--navy);
-    box-shadow: 4px 4px 0 var(--navy);
-  }
-  .cert-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 1.1rem;
-  }
-  .cert-icon.google { background: #fce8e6; }
-  .cert-icon.hubspot { background: #fff3e0; }
-  .cert-icon.semrush { background: #e8f5e9; }
-  .cert-icon.general { background: #e8eaf6; }
-  .cert-name {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--navy);
-    line-height: 1.3;
-  }
-  .cert-issuer {
-    font-size: 0.72rem;
-    color: var(--gray);
-    margin-top: 0.2rem;
-    font-weight: 400;
-  }
-
-  /* ── CONTACT ── */
-  #contact {
-    background: var(--navy);
-    padding: 80px 2rem;
-  }
-  .contact-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-  }
-  .contact-cta {
-    font-family: var(--font-display);
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 900;
-    color: var(--white);
-    line-height: 1.15;
-    letter-spacing: -0.03em;
-  }
-  .contact-cta em {
-    color: var(--red);
-    font-style: italic;
-  }
-  .contact-sub {
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.5);
-    margin-top: 1rem;
-    font-weight: 300;
-  }
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-  .contact-link {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: rgba(255,255,255,0.75);
-    transition: color 0.2s;
-    font-size: 0.9rem;
-    font-weight: 400;
-    group: true;
-  }
-  .contact-link:hover { color: var(--white); }
-  .contact-link-icon {
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255,255,255,0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    flex-shrink: 0;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .contact-link:hover .contact-link-icon {
-    border-color: var(--red);
-    background: rgba(238,33,43,0.15);
-  }
-  .contact-link-text { line-height: 1.3; }
-  .contact-link-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-  }
-  .contact-link-value { font-size: 0.9rem; }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--navy);
-    padding: 1.5rem 2rem;
-    border-top: 1px solid rgba(255,255,255,0.07);
-    text-align: center;
-    font-size: 0.72rem;
-    color: rgba(255,255,255,0.25);
-    letter-spacing: 0.05em;
-  }
-
-  /* ── HAMBURGER ── */
-  .nav-hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    width: 36px;
-    height: 36px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-    z-index: 200;
-  }
-  .nav-hamburger span {
-    display: block;
-    height: 2px;
-    background: var(--navy);
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    transform-origin: center;
-  }
-  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  .mobile-menu {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(8,44,75,0.97);
-    z-index: 150;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .mobile-menu.open { display: flex; }
-  .mobile-menu a {
-    font-size: 1.6rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    color: rgba(255,255,255,0.85);
-    letter-spacing: -0.02em;
-    transition: color 0.2s;
-  }
-  .mobile-menu a:hover { color: var(--red); }
-
-  /* ── PORTFOLIO LOGO ── */
-  .portfolio-logo {
-    width: auto;
-    height: 32px;
-    max-width: 90px;
-    object-fit: contain;
-    margin-bottom: 0.75rem;
-    filter: saturate(1.2) contrast(1.05);
-    display: block;
-  }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 768px) {
-    nav { padding: 0 1rem; }
-    .nav-links { display: none; }
-    .nav-hamburger { display: flex; }
-    section { padding: 70px 1.25rem; }
-    #hero { padding: 100px 1.25rem 60px; }
-    .hero-stats { gap: 0; }
-    .stat-card { padding: 1.25rem 1.5rem; min-width: 140px; }
-    .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-    .portfolio-grid { grid-template-columns: 1fr; }
-    .timeline { padding-left: 1.5rem; }
-    .exp-item { padding-left: 1.5rem; }
-    .section-header { flex-wrap: wrap; gap: 0.5rem; }
-    .section-line { display: none; }
-  }
-
-  @media (max-width: 480px) {
-    .hero-name { font-size: 3rem; }
-    .stat-card { min-width: 120px; padding: 1rem 1.1rem; }
-    .stat-number { font-size: 1.7rem; }
-    .cert-grid { grid-template-columns: 1fr; }
-  }
-
-  /* ── PRINT ── */
-  @media print {
-    nav { display: none; }
-    #hero { min-height: auto; padding: 40px 2rem; page-break-after: avoid; }
-    .fade-in { opacity: 1; transform: none; }
-    section { padding: 40px 2rem; }
-    .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  /* ── CLIENTS MARQUEE ── */
-  #clients {
-    background: var(--navy);
-    padding: 70px 0;
-    overflow: hidden;
-  }
-  .clients-header {
-    text-align: center;
-    margin-bottom: 2.8rem;
-    padding: 0 2rem;
-  }
-  .clients-label {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-    margin-bottom: 0.6rem;
-  }
-  .clients-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-    font-weight: 900;
-    color: var(--white);
-    letter-spacing: -0.03em;
-  }
-  .clients-title em { color: var(--red); font-style: normal; }
-  .marquee-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+  /* ── CLIENT LOGOS ── */
+  #clients { position: relative; background: var(--navy); padding: 44px 0 52px; border-top: 1px solid rgba(255,255,255,0.08); overflow: hidden; }
+  #clients::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: linear-gradient(90deg, var(--red) 0%, transparent 60%); }
+  .clients-label { text-align: center; padding: 0 2rem; margin-bottom: 1.8rem; color: rgba(255,255,255,0.72); font-size: var(--fs-label); font-weight: 500; letter-spacing: var(--track); text-transform: uppercase; line-height: 1.6; }
+  .clients-label strong { color: var(--white); font-weight: 600; white-space: nowrap; }
   .marquee-row {
-    display: flex;
-    overflow: hidden;
+    display: flex; overflow: hidden;
     mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
     -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
   }
-  .marquee-track {
-    display: flex;
-    gap: 1rem;
-    animation: marquee-scroll 44s linear infinite;
-    flex-shrink: 0;
-    will-change: transform;
+  .marquee-track { display: flex; flex-shrink: 0; animation: marquee-scroll 48s linear infinite; will-change: transform; }
+  .marquee-track.paused, .marquee-row:hover .marquee-track { animation-play-state: paused; }
+  @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .logo-card { flex-shrink: 0; min-width: 160px; height: 96px; padding: 0.75rem 1.6rem; display: flex; align-items: center; justify-content: center; }
+  .logo-card img { display: block; height: auto; opacity: 0.82; transition: opacity 0.2s; }
+  .logo-card:hover img { opacity: 1; }
+  .marquee-pause {
+    display: block; margin: 1.4rem auto 0; background: none; border: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.72);
+    font-family: var(--font-body); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.4rem 0.9rem; border-radius: 2px; cursor: pointer;
   }
-  .marquee-row.reverse .marquee-track {
-    animation-direction: reverse;
-    animation-duration: 32s;
+  .marquee-pause:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
+
+  /* ── SECTION BASE ── */
+  section { padding: 96px 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 3rem; }
+  .section-tag { font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--track); text-transform: uppercase; color: var(--red-text); white-space: nowrap; }
+  .section-title { font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; color: var(--navy); line-height: 1.1; letter-spacing: -0.025em; text-wrap: balance; }
+  .section-line { flex: 1; height: 1px; background: var(--gray-light); }
+  .section-intro { font-size: var(--fs-lead); line-height: 1.6; color: var(--text-muted); max-width: 62ch; margin: -1.4rem 0 2.6rem; }
+
+  /* ── SELECTED RESULTS ── */
+  #work { background: var(--white); }
+  .work-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--gray-light); border: 1px solid var(--gray-light); }
+  .card {
+    position: relative; display: flex; flex-direction: column; gap: 0.9rem;
+    background: var(--white); padding: 1.5rem 1.4rem 1.4rem; color: inherit; transition: background 0.25s;
   }
-  .marquee-row:hover .marquee-track { animation-play-state: paused; }
-  @keyframes marquee-scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+  .card::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: var(--red); transition: width 0.35s ease; }
+  .card:hover { background: var(--light); color: inherit; }
+  .card:hover::after { width: 100%; }
+  .card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.8rem; }
+  .logo-tile { width: 56px; height: 56px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--navy); border-radius: 2px; }
+  .logo-tile img { display: block; height: auto; }
+  .badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.3rem; }
+  .badge { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 2px; background: var(--light2); color: var(--navy); white-space: nowrap; }
+  .card-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--navy); line-height: 1.25; }
+  .card-venue { display: block; font-family: var(--font-body); font-size: var(--fs-small); font-weight: 400; color: var(--gray); margin-top: 0.2rem; }
+  .card-lead { margin-top: auto; }
+  .card-lead strong { display: block; font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--red); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: lining-nums tabular-nums; }
+  .card-lead span { display: block; margin-top: 0.4rem; font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3; color: var(--gray); }
+  .card-stats { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; padding-top: 0.8rem; border-top: 1px solid var(--light2); }
+  .card-stats strong { display: block; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--navy); line-height: 1.1; font-variant-numeric: lining-nums; }
+  .card-stats span { display: block; margin-top: 0.15rem; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.3; color: var(--gray); }
+  .card-note { padding-top: 0.6rem; border-top: 1px dashed var(--gray-light); font-size: var(--fs-label); line-height: 1.45; color: var(--gray); }
+  .card-link { align-self: flex-start; padding-bottom: 1px; border-bottom: 2px solid var(--red); font-size: var(--fs-label); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy); }
+  .card:hover .card-link { color: var(--red-text); }
+  .more { display: grid; grid-template-columns: 220px 1fr; gap: 2rem; align-items: start; margin-top: 2.6rem; padding-top: 1.4rem; border-top: 2px solid var(--navy); }
+  .more h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--navy); }
+  .more p { margin-top: 0.3rem; font-size: var(--fs-small); color: var(--gray); line-height: 1.5; }
+  .more ul { list-style: none; columns: 2; column-gap: 3rem; }
+  .more li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.55rem 0; border-bottom: 1px solid var(--light2); font-size: var(--fs-small); color: var(--text); break-inside: avoid; }
+  .more li span { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray); white-space: nowrap; }
+  .work-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; margin-top: 2.6rem; }
+
+  /* ── SERVICES ── */
+  #services { background: var(--light); }
+  .services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--gray-light); border: 1px solid var(--gray-light); }
+  .service { background: var(--white); padding: 2rem 1.8rem 1.9rem; }
+  .service-num { margin-bottom: 0.9rem; font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--track); text-transform: uppercase; color: var(--red-text); }
+  .service h3 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; margin-bottom: 0.6rem; }
+  .service p { font-size: var(--fs-body); line-height: 1.65; color: var(--text-muted); max-width: 52ch; }
+  .service-proof { margin-top: 1rem; font-size: var(--fs-small); color: var(--gray); }
+  .service-proof a { color: var(--navy); font-weight: 600; border-bottom: 1.5px solid var(--red); }
+  .service-proof a:hover { color: var(--red-text); }
+
+  /* ── HOW I WORK ── */
+  #process { background: var(--white); }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.2rem; padding-top: 1.6rem; border-top: 2px solid var(--navy); }
+  .step-num { font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--red); line-height: 1; font-variant-numeric: lining-nums; }
+  .step h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--navy); margin: 0.9rem 0 0.5rem; letter-spacing: -0.01em; }
+  .step p { font-size: var(--fs-small); line-height: 1.6; color: var(--text-muted); }
+
+  /* ── ABOUT ── */
+  #about { background: var(--light); }
+  .about { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; align-items: start; }
+  .about-photo { width: 220px; height: 220px; object-fit: cover; object-position: center top; border: 3px solid var(--white); border-radius: 2px; box-shadow: 8px 8px 0 var(--navy); }
+  .about-text { font-size: var(--fs-lead); line-height: 1.65; color: var(--text); max-width: 62ch; }
+  .about-text + .about-text { margin-top: 1rem; }
+  .about-text strong { color: var(--navy); font-weight: 600; }
+  .about-facts { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; margin-top: 1.5rem; font-size: var(--fs-small); color: var(--text-muted); }
+  .about-facts li { display: flex; align-items: center; gap: 0.5rem; }
+  .about-facts li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+  .about-facts a { color: var(--navy); font-weight: 600; border-bottom: 1.5px solid var(--red); }
+  .about-facts a:hover { color: var(--red-text); }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--navy); padding: 88px 2rem; }
+  .contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .contact-cta { font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; color: var(--white); line-height: 1.15; letter-spacing: -0.025em; }
+  .contact-cta em { color: var(--red); font-style: italic; font-weight: 600; }
+  .contact-sub { margin-top: 1rem; font-size: var(--fs-body); line-height: 1.6; color: rgba(255,255,255,0.78); max-width: 46ch; }
+  .contact-links { display: flex; flex-direction: column; gap: 0.9rem; }
+  .contact-link {
+    display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1rem;
+    border: 1px solid rgba(255,255,255,0.16); border-radius: 2px; color: rgba(255,255,255,0.88);
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
   }
-  .logo-card {
-    flex-shrink: 0;
-    background: transparent;
-    border: none;
-    padding: 0.75rem 1.6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    min-width: 160px;
-    height: 100px;
-    cursor: default;
-    transition: transform 0.2s, opacity 0.2s;
-    user-select: none;
-    opacity: 1;
+  .contact-link:hover { border-color: rgba(255,255,255,0.45); color: var(--white); }
+  .contact-link.primary { background: var(--red-text); border-color: var(--red-text); color: var(--white); }
+  .contact-link.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+  .contact-link-icon { width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.22); border-radius: 2px; }
+  .contact-link.primary .contact-link-icon { border-color: rgba(255,255,255,0.5); }
+  .contact-link-text { line-height: 1.3; min-width: 0; }
+  .contact-link-label { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+  .contact-link.primary .contact-link-label { color: rgba(255,255,255,0.92); }
+  .contact-link-value { font-size: var(--fs-body); font-weight: 500; overflow-wrap: anywhere; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.08); padding: 2rem 2rem 2.2rem; color: rgba(255,255,255,0.65); font-size: var(--fs-small); }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; }
+  .footer-links { list-style: none; display: flex; flex-wrap: wrap; gap: 1.25rem; }
+  .footer-links a { font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.8); }
+  .footer-links a:hover { color: var(--white); }
+
+  /* ── STICKY WHATSAPP (phones) ── */
+  .mobile-cta { display: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .work-grid { grid-template-columns: repeat(2, 1fr); }
+    .steps { grid-template-columns: repeat(2, 1fr); }
   }
-  .logo-card:hover {
-    transform: translateY(-3px);
-    opacity: 1;
+  @media (max-width: 768px) {
+    #siteNav { padding: 0 1rem; }
+    .nav-links, .nav-cta { display: none; }
+    .nav-hamburger { display: flex; }
+    section { padding: 64px 1.25rem; }
+    #hero { min-height: auto; padding: calc(var(--nav-h) + 44px) 1.25rem 56px; }
+    .hero-sub { font-size: 1.0625rem; margin-bottom: 1.8rem; }
+    .hero-cta { order: 4; flex-direction: column; align-items: stretch; margin-bottom: 2.4rem; }
+    .hero-stats { order: 5; margin-bottom: 0; }
+    .section-header { flex-wrap: wrap; gap: 0.4rem 0.9rem; margin-bottom: 2.2rem; }
+    .section-line { display: none; }
+    .section-intro { margin: -0.8rem 0 2rem; font-size: 1.0625rem; }
+    .work-grid { grid-template-columns: 1fr; }
+    .card { padding: 1.4rem 1.25rem 1.3rem; }
+    .more { grid-template-columns: 1fr; gap: 1rem; }
+    .more ul { columns: 1; }
+    .work-cta .btn { width: 100%; }
+    .services { grid-template-columns: 1fr; }
+    .service { padding: 1.6rem 1.3rem; }
+    .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+    .about { grid-template-columns: 1fr; gap: 2rem; }
+    .about-photo { width: 160px; height: 160px; }
+    .about-text { font-size: 1.0625rem; }
+    #contact { padding: 64px 1.25rem; }
+    .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+    footer { padding-bottom: calc(2.2rem + 76px); }
+    .mobile-cta {
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 120;
+      padding: 0.95rem 1rem; border-radius: 2px;
+      background: var(--red-text); color: var(--white); font-weight: 700; font-size: 1rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
   }
-  .logo-card img {
-    height: auto;
-    display: block;
-    opacity: 0.8;
-    transition: opacity 0.2s;
+  @media (max-width: 600px) {
+    .marquee-row { mask-image: none; -webkit-mask-image: none; }
+    .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+    .logo-card { min-width: 0; width: 33.333%; height: auto; min-height: 72px; padding: 0.6rem 0.9rem; }
+    .logo-card[data-dup] { display: none; }
+    .marquee-pause { display: none; }
   }
-  .logo-card:hover img {
-    opacity: 1;
+  @media (max-width: 480px) {
+    .hero-stats { grid-template-columns: 1fr; }
+    .stat { display: flex; align-items: baseline; gap: 1rem; padding: 0.85rem 0; border-left: 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .stat-number { font-size: 1.9rem; min-width: 5.2ch; }
+    .stat-label { margin-top: 0; }
   }
-  .logo-caption {
-    font-size: 0.6rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gray);
-    white-space: nowrap;
-    display: none;
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .js .fade-in { opacity: 1; transform: none; transition: none; }
+    .hero-rise { animation: none; }
+    .marquee-row { mask-image: none; -webkit-mask-image: none; }
+    .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+    .logo-card[data-dup] { display: none; }
+    .marquee-pause { display: none; }
+    .btn, .card, .card::after, .logo-card img { transition: none; }
   }
-  .clients-count {
-    text-align: center;
-    margin-top: 2.5rem;
-    padding: 0 2rem;
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.25);
-    letter-spacing: 0.08em;
+
+  @media print {
+    #siteNav, .mobile-menu, .mobile-cta, .marquee-pause { display: none; }
+    #hero, #clients, #contact, footer, .logo-tile, .btn-primary { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    #hero { min-height: auto; padding: 40px 2rem; }
+    .js .fade-in { opacity: 1; transform: none; }
+    section { padding: 40px 2rem; }
   }
 </style>
+<!-- /SHARED:style -->
 </head>
 
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-brand" style="text-decoration:none;color:inherit;">John<span>.</span></a>
+<!-- SHARED:nav -->
+<nav id="siteNav" aria-label="Main">
+  <a href="#hero" class="nav-brand">John<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="#bio">Bio</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+  <a class="nav-cta" href="https://wa.me/66994928394?text=Hi%20John%2C%20I%20run%20%5Bvenue%5D%20in%20%5Bcity%5D.%20I%27d%20like%20to%20talk%20about%20paid%20media%20for%20it." target="_blank" rel="noopener noreferrer">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+    WhatsApp
+  </a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
     <span></span><span></span><span></span>
   </button>
 </nav>
+<!-- /SHARED:nav -->
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#bio" class="mobile-nav-link">Bio</a>
-  <a href="#experience" class="mobile-nav-link">Experience</a>
-  <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+<!-- SHARED:menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menu">
+  <a href="#work" class="mobile-nav-link">Work</a>
+  <a href="#services" class="mobile-nav-link">Services</a>
+  <a href="#about" class="mobile-nav-link">About</a>
   <a href="case-studies.html" class="mobile-nav-link">Case Studies</a>
-  <a href="#certifications" class="mobile-nav-link">Certifications</a>
   <a href="#contact" class="mobile-nav-link">Contact</a>
-</div>
+  <a href="https://wa.me/66994928394?text=Hi%20John%2C%20I%20run%20%5Bvenue%5D%20in%20%5Bcity%5D.%20I%27d%20like%20to%20talk%20about%20paid%20media%20for%20it." class="btn btn-primary mobile-nav-link" target="_blank" rel="noopener noreferrer">Message me on WhatsApp</a>
+</nav>
+<!-- /SHARED:menu -->
+
+<main id="main">
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-dot-base"></div>
-  <div class="hero-dot-hover" id="heroDotHover"></div>
   <div class="hero-inner">
-    <div class="hero-label fade-in">Performance Marketer · Bangkok, Thailand</div>
-    <h1 class="hero-name fade-in delay-1">John</h1>
-    <p class="hero-title fade-in delay-2">Paid Media Specialist</p>
-    <p class="hero-tagline fade-in delay-3">"I don't run ads — <span class="hero-highlight-text">I engineer revenue.</span>"</p>
-    <p class="hero-proof fade-in delay-3" style="font-size:0.82rem;font-weight:500;letter-spacing:0.08em;color:rgba(255,255,255,0.38);text-transform:uppercase;margin-top:-2rem;margin-bottom:3rem;">Avg. 4.2× ROAS &nbsp;·&nbsp; 12 active clients &nbsp;·&nbsp; $250K+ managed</p>
+    <div class="hero-label">Freelance&nbsp;paid&nbsp;media · Bangkok,&nbsp;Thailand · GMT+7</div>
+    <h1 class="hero-name">Paid media for hospitality, <em>measured in bookings.</em></h1>
+    <p class="hero-sub hero-rise">I'm John. I run Meta, Google and TikTok ads for hotel restaurants, beach clubs, restaurants and spas in Thailand, with results tracked in your booking system: TableCheck, SevenRooms, LINE or WhatsApp.</p>
 
-    <div class="hero-stats fade-in delay-4">
-      <div class="stat-card">
-        <div class="stat-blob-wrap">
-          <div class="stat-blob" style="width:90px;height:90px;background:#ee212b;top:10%;left:20%;--blob-speed:14s;--tx1:0.5;--ty1:0.3;--tx2:-0.3;--ty2:0.6;--tx3:0.4;--ty3:-0.3;--tx4:-0.5;--ty4:-0.4;"></div>
-          <div class="stat-blob" style="width:60px;height:60px;background:#ff6b35;top:50%;left:60%;--blob-speed:18s;--tx1:-0.4;--ty1:0.5;--tx2:0.5;--ty2:-0.3;--tx3:-0.3;--ty3:0.4;--tx4:0.4;--ty4:-0.5;animation-delay:-5s;"></div>
-        </div>
-        <div class="stat-number"><span class="counter" data-target="250" data-prefix="$" data-suffix="K+">$0</span></div>
-        <div class="stat-label">Ad Spend Managed</div>
+    <div class="hero-stats hero-rise">
+      <div class="stat">
+        <div class="stat-number"><span class="counter" data-prefix="" data-target="6.2" data-decimals="1" data-group="0" data-suffix="×">6.2×</span></div>
+        <div class="stat-label">Blended ROAS, all web sales ÷ my ad spend · World Gourmet Festival 2026</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-blob-wrap">
-          <div class="stat-blob" style="width:80px;height:80px;background:#3b82f6;top:15%;left:30%;--blob-speed:16s;--tx1:-0.4;--ty1:0.4;--tx2:0.5;--ty2:0.3;--tx3:-0.3;--ty3:-0.5;--tx4:0.4;--ty4:0.3;"></div>
-          <div class="stat-blob" style="width:55px;height:55px;background:#60a5fa;top:55%;left:55%;--blob-speed:12s;--tx1:0.5;--ty1:-0.3;--tx2:-0.4;--ty2:0.5;--tx3:0.3;--ty3:0.4;--tx4:-0.5;--ty4:-0.3;animation-delay:-3s;"></div>
-        </div>
-        <div class="stat-number"><span class="counter" data-target="4.2" data-suffix="x" data-decimal="1">0</span></div>
-        <div class="stat-label">Avg. ROAS</div>
+      <div class="stat">
+        <div class="stat-number"><span class="counter" data-prefix="+" data-target="119" data-decimals="0" data-group="0" data-suffix="%">+119%</span></div>
+        <div class="stat-label">Reservations YoY, all channels · Fira Beach Club</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-blob-wrap">
-          <div class="stat-blob" style="width:85px;height:85px;background:#10b981;top:10%;left:25%;--blob-speed:17s;--tx1:0.4;--ty1:-0.5;--tx2:-0.5;--ty2:0.3;--tx3:0.3;--ty3:0.5;--tx4:-0.4;--ty4:-0.3;"></div>
-          <div class="stat-blob" style="width:50px;height:50px;background:#34d399;top:60%;left:65%;--blob-speed:13s;--tx1:-0.3;--ty1:0.4;--tx2:0.4;--ty2:-0.5;--tx3:-0.5;--ty3:0.3;--tx4:0.3;--ty4:0.5;animation-delay:-7s;"></div>
-        </div>
-        <div class="stat-number"><span class="counter" data-target="10" data-prefix="5–" data-suffix="/mo">0</span></div>
-        <div class="stat-label">New Clients / Month</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-blob-wrap">
-          <div class="stat-blob" style="width:75px;height:75px;background:#a78bfa;top:15%;left:20%;--blob-speed:15s;--tx1:-0.5;--ty1:0.3;--tx2:0.4;--ty2:-0.4;--tx3:-0.3;--ty3:0.5;--tx4:0.5;--ty4:-0.3;"></div>
-          <div class="stat-blob" style="width:55px;height:55px;background:#ec4899;top:55%;left:60%;--blob-speed:19s;--tx1:0.3;--ty1:-0.5;--tx2:-0.4;--ty2:0.4;--tx3:0.5;--ty3:-0.3;--tx4:-0.3;--ty4:0.5;animation-delay:-9s;"></div>
-        </div>
-        <div class="stat-number"><span class="counter" data-target="5" data-suffix="+ yrs">0</span></div>
-        <div class="stat-label">Experience</div>
+      <div class="stat">
+        <div class="stat-number"><span class="counter" data-prefix="" data-target="8" data-decimals="0" data-group="0" data-suffix="">8</span></div>
+        <div class="stat-label">Case studies with sourced numbers</div>
       </div>
     </div>
 
-    <div class="hero-contact fade-in">
-      <a href="#contact" class="btn-neon">
-        Contact Me
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    <div class="hero-cta hero-rise">
+      <a href="https://wa.me/66994928394?text=Hi%20John%2C%20I%20run%20%5Bvenue%5D%20in%20%5Bcity%5D.%20I%27d%20like%20to%20talk%20about%20paid%20media%20for%20it." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        WhatsApp me about your venue
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
+      <a href="#work" class="btn btn-ghost">See the results</a>
     </div>
   </div>
 </section>
 
-<!-- BIO -->
-<section id="bio">
+<!-- CLIENT LOGOS -->
+<section id="clients" aria-label="Venues I have run campaigns for">
+  <p class="clients-label">Campaigns for venues at <strong>Anantara Siam Bangkok</strong> · <strong>SO/ Bangkok</strong> · <strong>Pullman Phuket Karon</strong></p>
+  <div class="marquee-row">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="logo-card"><img src="John%20Website%20Images/strip/World Gourmet Festival.webp" alt="World Gourmet Festival" width="63" height="67" style="width:63px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Carpe Diem.webp" alt="Carpe Diem" width="58" height="72" style="width:58px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Iris and Wild Iris.webp" alt="Iris &amp; Wild Iris" width="125" height="34" style="width:125px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Fira.webp" alt="Fira Beach Club" width="111" height="38" style="width:111px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Thai Thai.webp" alt="Thai Thai" width="79" height="53" style="width:79px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Madison.webp" alt="Madison Steak Avenue" width="111" height="38" style="width:111px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Hug Samui.webp" alt="Hug Samui" width="67" height="63" style="width:67px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/SImba Sea Trips.webp" alt="Simba Sea Trips" width="72" height="58" style="width:72px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/ARNA Spa.webp" alt="ARNA Oceanic Wellness Spa" width="104" height="41" style="width:104px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Tabu.webp" alt="Tabu" width="102" height="41" style="width:102px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Xian Yuan.webp" alt="Xian Yuan" width="74" height="57" style="width:74px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Yona.webp" alt="Yona" width="92" height="46" style="width:92px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Marbela beach.webp" alt="Marbela Beach Club" width="71" height="60" style="width:71px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Savayna.webp" alt="Savaya" width="75" height="55" style="width:75px"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/World Gourmet Festival.webp" alt="" aria-hidden="true" width="63" height="67" style="width:63px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Carpe Diem.webp" alt="" aria-hidden="true" width="58" height="72" style="width:58px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Iris and Wild Iris.webp" alt="" aria-hidden="true" width="125" height="34" style="width:125px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Fira.webp" alt="" aria-hidden="true" width="111" height="38" style="width:111px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Thai Thai.webp" alt="" aria-hidden="true" width="79" height="53" style="width:79px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Madison.webp" alt="" aria-hidden="true" width="111" height="38" style="width:111px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Hug Samui.webp" alt="" aria-hidden="true" width="67" height="63" style="width:67px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/SImba Sea Trips.webp" alt="" aria-hidden="true" width="72" height="58" style="width:72px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/ARNA Spa.webp" alt="" aria-hidden="true" width="104" height="41" style="width:104px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Tabu.webp" alt="" aria-hidden="true" width="102" height="41" style="width:102px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Xian Yuan.webp" alt="" aria-hidden="true" width="74" height="57" style="width:74px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Yona.webp" alt="" aria-hidden="true" width="92" height="46" style="width:92px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Marbela beach.webp" alt="" aria-hidden="true" width="71" height="60" style="width:71px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Savayna.webp" alt="" aria-hidden="true" width="75" height="55" style="width:75px" loading="lazy"></div>
+    </div>
+  </div>
+  <button class="marquee-pause" id="marqueePause" type="button" aria-controls="marqueeTrack">Pause</button>
+</section>
+
+<!-- SELECTED RESULTS -->
+<section id="work">
   <div class="section-inner">
     <div class="section-header fade-in">
       <span class="section-tag">01</span>
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title">Selected results</h2>
       <div class="section-line"></div>
     </div>
-    <div class="bio-layout fade-in delay-1">
-      <img class="bio-photo" src="John Website Images/image.png" alt="John — Performance Marketer">
-      <div class="bio-content">
-        <p class="bio-text">
-          Performance marketer with <strong>5+ years</strong> driving measurable growth across <strong>Google, Facebook, and Instagram</strong> for brands in hospitality, B2B, and health &amp; beauty across Asia. I specialize in data-driven campaign strategy, <strong>pixel implementation</strong>, AI-powered optimization, and full-funnel conversion management — from audience architecture to post-click experience. Every dollar I manage is <strong>tracked, tested, and pushed to its highest return.</strong>
-        </p>
+    <p class="section-intro fade-in">Eight venues and events, with numbers from the client report, the venue's own booking records or the ad platforms. Each card names its source and links to the full case study.</p>
+
+    <div class="work-grid">
+
+      <a class="card fade-in" href="case-studies.html#world-gourmet-festival">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/World Gourmet Festival.webp" alt="" width="32" height="34" style="width:32px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span></div>
+        </div>
+        <div class="card-name">World Gourmet Festival 2026 <span class="card-venue">Anantara Siam Bangkok</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="6.2" data-decimals="1" data-group="0" data-suffix="×">6.2×</strong><span>Blended ROAS · all web sales ÷ my ad spend</span></div>
+        <ul class="card-stats">
+          <li><strong>$6,610</strong><span>Campaign spend</span></li>
+          <li><strong>$41,070</strong><span>Online sales</span></li>
+        </ul>
+        <p class="card-note">18 Jul–4 Oct 2026 · all TableCheck web sales, any source, ÷ my Meta campaign spend</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in d1" href="case-studies.html#iris-wild-iris">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Iris and Wild Iris.webp" alt="" width="46" height="12" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
+        </div>
+        <div class="card-name">Iris &amp; Wild Iris <span class="card-venue">SO/ Bangkok</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="34" data-decimals="0" data-group="0" data-suffix="">34</strong><span>Ad bookings · SevenRooms</span></div>
+        <ul class="card-stats">
+          <li><strong>$1,790</strong><span>Ad spend / mo</span></li>
+          <li><strong>1.6M</strong><span>Impressions / mo</span></li>
+        </ul>
+        <p class="card-note">Jun–Aug 2026 · bookings made via the ads' tracking link</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in d2" href="case-studies.html#thai-thai">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Thai Thai.webp" alt="" width="40" height="27" style="width:40px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span></div>
+        </div>
+        <div class="card-name">Thai Thai <span class="card-venue">Pullman Phuket Karon</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="620" data-decimals="0" data-group="0" data-suffix="K">620K</strong><span>People reached</span></div>
+        <ul class="card-stats">
+          <li><strong>$990</strong><span>Launch spend</span></li>
+          <li><strong>10K</strong><span>Link clicks</span></li>
+        </ul>
+        <p class="card-note">Jul–Aug 2026 · first 47 days after opening · Meta Ads Manager</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in d3" href="case-studies.html#fira-phuket">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Fira.webp" alt="" width="46" height="16" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span><span class="badge">TikTok</span></div>
+        </div>
+        <div class="card-name">Fira Beach Club <span class="card-venue">Kata, Phuket</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="+" data-target="119" data-decimals="0" data-group="0" data-suffix="%">+119%</strong><span>Reservations YoY, all channels</span></div>
+        <ul class="card-stats">
+          <li><strong>$2,860</strong><span>Ad spend / mo</span></li>
+          <li><strong>2.2M+</strong><span>People reached · Meta</span></li>
+        </ul>
+        <p class="card-note">Mar–Aug 2026 vs 2025 · all-channel reservations, walk-ins included</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in" href="case-studies.html#madison-steak-avenue">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Madison.webp" alt="" width="46" height="16" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span></div>
+        </div>
+        <div class="card-name">Madison Steak Avenue <span class="card-venue">Anantara Siam Bangkok</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="223" data-decimals="0" data-group="0" data-suffix="">223</strong><span>Guests booked, all sources</span></div>
+        <ul class="card-stats">
+          <li><strong>$1,360</strong><span>Ad spend / mo</span></li>
+          <li><strong>1.4M</strong><span>Impressions / mo</span></li>
+        </ul>
+        <p class="card-note">Mar–Aug 2026 · TableCheck + LINE guests, all sources (client data)</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in d1" href="case-studies.html#xian-yuan">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Xian Yuan.webp" alt="" width="38" height="29" style="width:38px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
+        </div>
+        <div class="card-name">Xian Yuan <span class="card-venue">Modern Cantonese · Silom, Bangkok</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="522" data-decimals="0" data-group="0" data-suffix="">522</strong><span>Reservations + enquiries, all channels</span></div>
+        <ul class="card-stats">
+          <li><strong>$2,280</strong><span>Ad spend · Aug</span></li>
+          <li><strong>936K</strong><span>People reached · Meta</span></li>
+        </ul>
+        <p class="card-note">Aug 2026 · restaurant's own all-channel count</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in d2" href="case-studies.html#hug-samui">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Hug Samui.webp" alt="" width="34" height="32" style="width:34px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
+        </div>
+        <div class="card-name">Hug Samui <span class="card-venue">Bang Por Beach, Koh Samui</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="122" data-decimals="0" data-group="0" data-suffix="">122</strong><span>Chats, calls &amp; directions</span></div>
+        <ul class="card-stats">
+          <li><strong>55%</strong><span>Lower cost per Meta chat</span></li>
+          <li><strong>$5</strong><span>Avg cost per action</span></li>
+        </ul>
+        <p class="card-note">14 Aug–23 Sep 2026 · client report + Meta Ads Manager</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+      <a class="card fade-in d3" href="case-studies.html#arna-spa">
+        <div class="card-head">
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/ARNA Spa.webp" alt="" width="46" height="18" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
+        </div>
+        <div class="card-name">ARNA Oceanic Wellness Spa <span class="card-venue">Chaweng Beach, Koh Samui</span></div>
+        <div class="card-lead"><strong class="counter" data-prefix="" data-target="47" data-decimals="0" data-group="0" data-suffix="">47</strong><span>Chat enquiries from Meta ads</span></div>
+        <ul class="card-stats">
+          <li><strong>61</strong><span>Google calls &amp; directions</span></li>
+          <li><strong>272K</strong><span>People reached · Meta</span></li>
+        </ul>
+        <p class="card-note">20 Jul–20 Aug 2026 · first month of ads, incl. 9 days before I joined · client report</p>
+        <span class="card-link">Read case study &rarr;</span>
+      </a>
+
+    </div>
+
+    <div class="more fade-in">
+      <div>
+        <h3>Also worked with</h3>
+        <p>Campaign management for these venues, without a public report.</p>
       </div>
+      <ul>
+        <li>Carpe Diem Gym &amp; Beach Club <span>Meta · Google</span></li>
+        <li>Simba Sea Trips <span>Meta · Google</span></li>
+        <li>Marbela Beach Club <span>Meta · Google</span></li>
+        <li>Tabu <span>Meta</span></li>
+        <li>Savaya <span>Meta</span></li>
+        <li>Yona <span>Meta</span></li>
+      </ul>
+    </div>
+
+    <div class="work-cta fade-in">
+      <a href="case-studies.html" class="btn btn-outline">Read all 8 case studies
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="https://wa.me/66994928394?text=Hi%20John%2C%20I%20run%20%5Bvenue%5D%20in%20%5Bcity%5D.%20I%27d%20like%20to%20talk%20about%20paid%20media%20for%20it." class="btn btn-primary" target="_blank" rel="noopener noreferrer">WhatsApp me about your venue</a>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
+<!-- SERVICES -->
+<section id="services">
   <div class="section-inner">
     <div class="section-header fade-in">
       <span class="section-tag">02</span>
-      <h2 class="section-title">Core Skills</h2>
+      <h2 class="section-title">What I do</h2>
       <div class="section-line"></div>
     </div>
-    <div class="skills-grid fade-in delay-1">
-      <span class="skill-chip highlight">Google Ads</span>
-      <span class="skill-chip highlight">Meta Ads</span>
-      <span class="skill-chip">Search · Display · Video</span>
-      <span class="skill-chip">Facebook · Instagram</span>
-      <span class="skill-chip">Conversion Tracking &amp; Pixel Setup</span>
-      <span class="skill-chip">Conversion API (CAPI)</span>
-      <span class="skill-chip">Analytics &amp; Reporting</span>
-      <span class="skill-chip">Lead Generation Funnels</span>
-      <span class="skill-chip">Audience Segmentation</span>
-      <span class="skill-chip">A/B Testing</span>
-      <span class="skill-chip">HubSpot CRM</span>
-      <span class="skill-chip">TikTok Ads</span>
-      <span class="skill-chip highlight">AI Tools &amp; Automation</span>
-      <span class="skill-chip">Performance Max (PMax)</span>
-      <span class="skill-chip">Chatbot Development</span>
-      <span class="skill-chip">Data-Driven Reporting</span>
+    <div class="services">
+      <div class="service fade-in">
+        <div class="service-num">01</div>
+        <h3>Always-on paid media</h3>
+        <p>Monthly Meta, Google and TikTok management for a venue: planning, media buying, creative rotation, weekly optimisation and a monthly report that shows bookings and spend, not just reach.</p>
+        <p class="service-proof">Proof: <a href="case-studies.html#fira-phuket">Fira Beach Club, reservations up 119% on the same six months of 2025, all channels &rarr;</a></p>
+      </div>
+      <div class="service fade-in d1">
+        <div class="service-num">02</div>
+        <h3>Launches, festivals and events</h3>
+        <p>Date-phased campaigns for openings, festivals and seasonal offers: awareness first, then the booking push, then a final-week countdown, with the budget moving to what sells.</p>
+        <p class="service-proof">Proof: <a href="case-studies.html#world-gourmet-festival">World Gourmet Festival, $41,070 of web sales during a $6,610 campaign &rarr;</a></p>
+      </div>
+      <div class="service fade-in d2">
+        <div class="service-num">03</div>
+        <h3>Tracking and measurement</h3>
+        <p>Meta Pixel, Conversion API, Google Tag Manager and GA4 set up and checked before any money is spent, with bookings counted through TableCheck, SevenRooms, LINE or WhatsApp, so reports show what the ads brought in, not just clicks.</p>
+        <p class="service-proof">Proof: <a href="case-studies.html#iris-wild-iris">Iris &amp; Wild Iris, 34 bookings tracked to Meta and Google in SevenRooms &rarr;</a></p>
+      </div>
+      <div class="service fade-in d3">
+        <div class="service-num">04</div>
+        <h3>White-label for agencies</h3>
+        <p>I run campaigns inside agency teams under your brand: you keep the client relationship, I do the planning, buying, tracking and reporting. I already work this way with two agencies, on venues in Thailand and Indonesia.</p>
+        <p class="service-proof">Proof: <a href="case-studies.html">the case studies were delivered through agency teams &rarr;</a></p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
+<!-- HOW I WORK -->
+<section id="process">
   <div class="section-inner">
     <div class="section-header fade-in">
       <span class="section-tag">03</span>
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title">How I work</h2>
       <div class="section-line"></div>
     </div>
-
-    <div class="timeline">
-
-      <div class="exp-item fade-in">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">Black Interactive</div>
-            <div class="exp-role">Growth Executive</div>
-          </div>
-          <span class="exp-duration">2022 · 1 yr 4 mos</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Promoted from Growth Intern to Growth Executive within 3 months based on performance</li>
-          <li>Managed media buying, chatbot development, and CRM solutions for B2B clients</li>
-          <li>Took ownership of operations management and end-to-end campaign delivery</li>
-        </ul>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-num">01</div>
+        <h3>A short call</h3>
+        <p>Your venue, what a good month looks like, how guests book today, and the budget you have in mind.</p>
       </div>
-
-      <div class="exp-item fade-in delay-1">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">MCIX Agency</div>
-            <div class="exp-role">Digital Specialist</div>
-          </div>
-          <span class="exp-duration">2023 · 1 year</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Developed and executed digital marketing strategies at one of Myanmar's leading agencies</li>
-          <li>Worked across major regional and international brands: Panasonic, Dai-Ichi Life Insurance, Aconatic, Boss, Chericof</li>
-          <li>Managed multi-brand campaigns across social media and search platforms</li>
-        </ul>
+      <div class="step fade-in d1">
+        <div class="step-num">02</div>
+        <h3>Tracking before spend</h3>
+        <p>I check or set up the pixel, Conversion API and booking-platform events, so results can be counted from the first day.</p>
       </div>
-
-      <div class="exp-item fade-in delay-2">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">Upscale</div>
-            <div class="exp-role">Performance Marketer · Freelancer</div>
-          </div>
-          <span class="exp-duration">2024 · 5 months</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Managed full-cycle paid ad campaigns for health &amp; beauty and aesthetic &amp; physiotherapy clinics across Asia</li>
-          <li>End-to-end ownership: campaign launch, performance monitoring, pixel tracking, Conversion API implementation</li>
-          <li>Consistently delivered 5–10 new clients per month per clinic through optimized lead generation funnels</li>
-        </ul>
+      <div class="step fade-in d2">
+        <div class="step-num">03</div>
+        <h3>Launch by occasion</h3>
+        <p>Campaigns built around what people actually book: events, weekly rituals, day beds, set menus. Tourists and locals targeted separately, in their languages.</p>
       </div>
-
-      <div class="exp-item current fade-in delay-2">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">Invade Marketing</div>
-            <div class="exp-role">Digital Marketing Specialist</div>
-          </div>
-          <span class="exp-duration">2024 · Present</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Manages Google, Facebook &amp; Instagram campaigns for hospitality and lifestyle brands in Thailand and Indonesia</li>
-          <li>Key clients: Carpe Diem, Distillery, Simba Sea Trips, Tabu Bali, The Whole Ours (Indonesia)</li>
-          <li>Builds data-driven funnels and delivers detailed performance reports for continuous campaign optimization</li>
-        </ul>
+      <div class="step fade-in d3">
+        <div class="step-num">04</div>
+        <h3>Optimise weekly, report monthly</h3>
+        <p>Budget moves to what books. The monthly report shows bookings, sales and spend, with the data sources named.</p>
       </div>
-
-      <div class="exp-item current fade-in delay-3">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">Cadence Digital Marketing Agency</div>
-            <div class="exp-role">Digital Marketing Specialist · Freelancer</div>
-          </div>
-          <span class="exp-duration">2026 · Present</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Manages multi-platform paid campaigns across Google and Meta for agency clients</li>
-          <li>Key clients: Iris &amp; Wild Iris (SO/ Bangkok), World Gourmet Festival (Anantara Siam), Thai Thai (Pullman Phuket Karon), Madison, Xian Yuan</li>
-          <li>Handles full campaign lifecycle: strategy, launch, optimization, pixel tracking, and conversion reporting</li>
-          <li>Delivers data-driven insights through detailed performance reporting and ongoing client communication</li>
-        </ul>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- CLIENTS -->
-<section id="clients">
-  <div class="clients-header fade-in">
-    <div class="clients-label">Trusted by</div>
-    <h2 class="clients-title">Brands I've <em>Driven Results</em> For</h2>
-  </div>
-
-  <div class="marquee-wrapper">
-    <div class="marquee-row">
-      <div class="marquee-track">
-        <div class="logo-card"><img src="John Website Images/strip/World Gourmet Festival.png" alt="World Gourmet Festival" style="width:63px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Carpe Diem.png" alt="Carpe Diem" style="width:58px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Iris and Wild Iris.png" alt="Iris &amp; Wild Iris" style="width:125px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Fira.png" alt="Fira Phuket" style="width:111px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Thai Thai.png" alt="Thai Thai" style="width:79px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Madison.png" alt="Madison Steak Avenue" style="width:111px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Hug Samui.png" alt="Hug Samui" style="width:67px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/SImba Sea Trips.png" alt="Simba Sea Trips" style="width:72px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/ARNA Spa.png" alt="ARNA Oceanic Wellness Spa" style="width:104px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Tabu.png" alt="Tabu" style="width:102px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Xian Yuan.png" alt="Xian Yuan" style="width:74px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Yona.png" alt="Yona" style="width:92px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Marbela beach.png" alt="Marbela Beach Club" style="width:71px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Savayna.png" alt="Savayana" style="width:75px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/World Gourmet Festival.png" alt="" aria-hidden="true" style="width:63px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Carpe Diem.png" alt="" aria-hidden="true" style="width:58px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Iris and Wild Iris.png" alt="" aria-hidden="true" style="width:125px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Fira.png" alt="" aria-hidden="true" style="width:111px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Thai Thai.png" alt="" aria-hidden="true" style="width:79px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Madison.png" alt="" aria-hidden="true" style="width:111px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Hug Samui.png" alt="" aria-hidden="true" style="width:67px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/SImba Sea Trips.png" alt="" aria-hidden="true" style="width:72px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/ARNA Spa.png" alt="" aria-hidden="true" style="width:104px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Tabu.png" alt="" aria-hidden="true" style="width:102px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Xian Yuan.png" alt="" aria-hidden="true" style="width:74px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Yona.png" alt="" aria-hidden="true" style="width:92px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Marbela beach.png" alt="" aria-hidden="true" style="width:71px"></div>
-        <div class="logo-card"><img src="John Website Images/strip/Savayna.png" alt="" aria-hidden="true" style="width:75px"></div>
-      </div>
-    </div>
-  </div>
-  <div class="clients-count fade-in">150+ brands across Thailand · Indonesia · Malaysia · Singapore · Myanmar · United States · Canada · United Kingdom</div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio">
+<!-- ABOUT -->
+<section id="about">
   <div class="section-inner">
     <div class="section-header fade-in">
       <span class="section-tag">04</span>
-      <h2 class="section-title">Portfolio</h2>
+      <h2 class="section-title">About</h2>
       <div class="section-line"></div>
     </div>
-    <div class="portfolio-grid">
-
-      <div class="portfolio-card fade-in">
-        <img class="portfolio-logo" src="John Website Images/World Gourmet Festival.png" alt="World Gourmet Festival">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">World Gourmet Festival<br>Anantara Siam Bangkok</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$6,610</div><div class="metric-label">Campaign Spend</div></div>
-          <div class="metric"><div class="metric-value">$41,070</div><div class="metric-label">Online Sales</div></div>
-          <div class="metric"><div class="metric-value">6.2x</div><div class="metric-label">Blended ROAS</div></div>
-        </div>
-        <div class="portfolio-note">Jul–Oct 2026 · TableCheck web sales ÷ campaign spend</div>
-        <a class="portfolio-link" href="case-studies.html#world-gourmet-festival">Read case study &rarr;</a>
+    <div class="about fade-in">
+      <img class="about-photo" src="John%20Website%20Images/john-360.webp" srcset="John%20Website%20Images/john-360.webp 360w, John%20Website%20Images/john-720.webp 720w" sizes="(max-width: 768px) 160px, 220px" width="220" height="220" alt="John, freelance paid-media specialist based in Bangkok" loading="lazy" decoding="async">
+      <div>
+        <p class="about-text">I'm John, a freelance paid-media specialist based in Bangkok. I run paid campaigns for hospitality venues across Thailand and Indonesia: <strong>hotel restaurants and festivals in Bangkok, beach clubs in Phuket, restaurants and spas on Koh Samui.</strong></p>
+        <p class="about-text">I set up tracking first, so reports show bookings, enquiries and sales, not reach alone. Hire me directly, or white-label me inside your agency.</p>
+        <ul class="about-facts">
+          <li>Bangkok, Thailand · GMT+7</li>
+          <li>Meta · Google · TikTok</li>
+          <li>English and Burmese</li>
+          <li><a href="cv.html">Full CV &rarr;</a></li>
+        </ul>
       </div>
-
-      <div class="portfolio-card fade-in delay-1">
-        <img class="portfolio-logo" src="John Website Images/Iris and Wild Iris.png" alt="Iris &amp; Wild Iris">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Iris &amp; Wild Iris<br>SO/ Bangkok</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-            <span class="platform-badge google">Google</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$1,790</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">34</div><div class="metric-label">Ad Bookings</div></div>
-          <div class="metric"><div class="metric-value">1.6M</div><div class="metric-label">Impressions / mo</div></div>
-        </div>
-        <div class="portfolio-note">Jun–Aug 2026 · bookings tracked in SevenRooms</div>
-        <a class="portfolio-link" href="case-studies.html#iris-wild-iris">Read case study &rarr;</a>
-      </div>
-
-      <div class="portfolio-card fade-in delay-2">
-        <img class="portfolio-logo" src="John Website Images/Thai Thai.png" alt="Thai Thai">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Thai Thai<br>Pullman Phuket Karon</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$990</div><div class="metric-label">Launch Spend</div></div>
-          <div class="metric"><div class="metric-value">620K</div><div class="metric-label">People Reached</div></div>
-          <div class="metric"><div class="metric-value">10K</div><div class="metric-label">Link Clicks</div></div>
-        </div>
-        <div class="portfolio-note">First 47 days after opening · Jul–Aug 2026</div>
-        <a class="portfolio-link" href="case-studies.html#thai-thai">Read case study &rarr;</a>
-      </div>
-
-      <div class="portfolio-card fade-in">
-        <img class="portfolio-logo" src="John Website Images/Carpe Diem.png" alt="Carpe Diem">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Carpe Diem<br>Gym &amp; Beach Club</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-            <span class="platform-badge google">Google</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$2,400</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">$9,840</div><div class="metric-label">Revenue</div></div>
-          <div class="metric"><div class="metric-value">4.1x</div><div class="metric-label">ROAS</div></div>
-        </div>
-      </div>
-
-      <div class="portfolio-card fade-in delay-1">
-        <img class="portfolio-logo" src="John Website Images/Tabu.png" alt="Tabu Spirits Club">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Tabu<br>Spirits Club</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$1,800</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">$6,840</div><div class="metric-label">Revenue</div></div>
-          <div class="metric"><div class="metric-value">3.8x</div><div class="metric-label">ROAS</div></div>
-        </div>
-      </div>
-
-      <div class="portfolio-card fade-in delay-2">
-        <img class="portfolio-logo" src="John Website Images/SImba Sea Trips.png" alt="Simba Sea Trips">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Simba Sea Trips</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-            <span class="platform-badge google">Google</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$3,200</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">$14,720</div><div class="metric-label">Revenue</div></div>
-          <div class="metric"><div class="metric-value">4.6x</div><div class="metric-label">ROAS</div></div>
-        </div>
-      </div>
-
-      <div class="portfolio-card fade-in">
-        <img class="portfolio-logo" src="John Website Images/Fira.png" alt="Fira Beach Club">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Fira Beach Club<br>Phuket</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-            <span class="platform-badge tiktok">TikTok</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$2,860</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">+119%</div><div class="metric-label">Reservations YoY</div></div>
-          <div class="metric"><div class="metric-value">2.2M+</div><div class="metric-label">Unique Reach</div></div>
-        </div>
-        <div class="portfolio-note">Mar–Aug 2026 vs 2025 · all-channel reservations</div>
-        <a class="portfolio-link" href="case-studies.html#fira-phuket">Read case study &rarr;</a>
-      </div>
-
-      <div class="portfolio-card fade-in delay-1">
-        <img class="portfolio-logo" src="John Website Images/Madison.png" alt="Madison Steak Avenue">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Madison<br>Steak Avenue</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$1,360</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">223</div><div class="metric-label">Guests Booked</div></div>
-          <div class="metric"><div class="metric-value">1.4M</div><div class="metric-label">Impressions / mo</div></div>
-        </div>
-        <div class="portfolio-note">Mar–Aug 2026 · guests via TableCheck + LINE (client data)</div>
-        <a class="portfolio-link" href="case-studies.html#madison-steak-avenue">Read case study &rarr;</a>
-      </div>
-
-      <div class="portfolio-card fade-in delay-2">
-        <img class="portfolio-logo" src="John Website Images/Xian Yuan.png" alt="Xian Yuan Restaurant">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Xian Yuan<br>Restaurant, Bangkok</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-            <span class="platform-badge google">Google</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$2,280</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">522</div><div class="metric-label">Reservations + Enquiries</div></div>
-          <div class="metric"><div class="metric-value">936K</div><div class="metric-label">Meta Reach</div></div>
-        </div>
-        <div class="portfolio-note">Aug 2026 · restaurant's all-channel reservations + enquiries</div>
-        <a class="portfolio-link" href="case-studies.html#xian-yuan">Read case study &rarr;</a>
-      </div>
-
-      <div class="portfolio-card fade-in">
-        <img class="portfolio-logo" src="John Website Images/Savayna.png" alt="Savayana">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Savayana</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$2,000</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">$7,600</div><div class="metric-label">Revenue</div></div>
-          <div class="metric"><div class="metric-value">3.8x</div><div class="metric-label">ROAS</div></div>
-        </div>
-      </div>
-
-      <div class="portfolio-card fade-in delay-1">
-        <img class="portfolio-logo" src="John Website Images/Marbela beach.png" alt="Marbela Beach Club">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Marbela<br>Beach Club</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-            <span class="platform-badge google">Google</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$2,500</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">$10,250</div><div class="metric-label">Revenue</div></div>
-          <div class="metric"><div class="metric-value">4.1x</div><div class="metric-label">ROAS</div></div>
-        </div>
-      </div>
-
-      <div class="portfolio-card fade-in delay-2">
-        <img class="portfolio-logo" src="John Website Images/Yona.png" alt="Yona">
-        <div class="portfolio-card-top">
-          <div class="portfolio-name">Yona</div>
-          <div class="platform-badges">
-            <span class="platform-badge meta">Meta</span>
-          </div>
-        </div>
-        <div class="portfolio-metrics">
-          <div class="metric"><div class="metric-value">$1,600</div><div class="metric-label">Ad Spend / mo</div></div>
-          <div class="metric"><div class="metric-value">$5,920</div><div class="metric-label">Revenue</div></div>
-          <div class="metric"><div class="metric-value">3.7x</div><div class="metric-label">ROAS</div></div>
-        </div>
-      </div>
-
-    </div>
-    <div class="portfolio-more fade-in">
-      <a href="case-studies.html" class="btn-outline">See all case studies
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </a>
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-inner">
-    <div class="section-header fade-in">
-      <span class="section-tag">05</span>
-      <h2 class="section-title">Certifications</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="cert-grid">
+</main>
 
-      <div class="cert-card fade-in">
-        <div class="cert-icon google"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d32f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <div>
-          <div class="cert-name">Google Ads Search Certification</div>
-          <div class="cert-issuer">Google Skillshop</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in delay-1">
-        <div class="cert-icon google"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d32f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <div>
-          <div class="cert-name">Google Ads Display Certification</div>
-          <div class="cert-issuer">Google Skillshop</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in delay-2">
-        <div class="cert-icon google"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d32f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
-        <div>
-          <div class="cert-name">Google Ads Video Certification</div>
-          <div class="cert-issuer">Google Skillshop</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in delay-3">
-        <div class="cert-icon google"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d32f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-        <div>
-          <div class="cert-name">Google Ads Analytics Certification</div>
-          <div class="cert-issuer">Google Skillshop</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in">
-        <div class="cert-icon hubspot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8671a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <div>
-          <div class="cert-name">Digital Marketing Certification</div>
-          <div class="cert-issuer">HubSpot Academy</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in delay-1">
-        <div class="cert-icon hubspot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8671a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-        <div>
-          <div class="cert-name">HubSpot CMS for Marketers</div>
-          <div class="cert-issuer">HubSpot Academy</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in delay-2">
-        <div class="cert-icon semrush"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#388e3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <div>
-          <div class="cert-name">Lead Generation Accelerator</div>
-          <div class="cert-issuer">SEMrush</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-in delay-3">
-        <div class="cert-icon general"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3949ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-        <div>
-          <div class="cert-name">Full Stack Digital Marketing</div>
-          <div class="cert-issuer">United Latino Students Association</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
+<!-- SHARED:contact -->
 <section id="contact">
   <div class="contact-inner">
     <div class="fade-in">
       <h2 class="contact-cta">Let's talk <em>results.</em></h2>
-      <p class="contact-sub">Open to new opportunities — freelance, agency, or in-house.</p>
+      <p class="contact-sub">Tell me about your venue and the monthly ad budget you have in mind. WhatsApp is the fastest way to reach me, on Bangkok time (GMT+7). Agencies: I also work white-label under your brand.</p>
     </div>
-    <div class="contact-links fade-in delay-2">
-      <a href="https://wa.me/66994928394" target="_blank" rel="noopener noreferrer" class="contact-link">
+    <div class="contact-links fade-in d1">
+      <a href="https://wa.me/66994928394?text=Hi%20John%2C%20I%20run%20%5Bvenue%5D%20in%20%5Bcity%5D.%20I%27d%20like%20to%20talk%20about%20paid%20media%20for%20it." target="_blank" rel="noopener noreferrer" class="contact-link primary">
         <div class="contact-link-icon">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.71 3.41 2 2 0 0 1 3.68 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.78-.78a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
         </div>
         <div class="contact-link-text">
-          <div class="contact-link-label">WhatsApp — fastest response</div>
+          <div class="contact-link-label">WhatsApp · fastest reply</div>
           <div class="contact-link-value">+66 99 492 8394</div>
         </div>
       </a>
-      <a href="mailto:htetarkarz1024@gmail.com" class="contact-link">
+      <a href="mailto:htetarkarz1024@gmail.com?subject=Paid%20media%20for%20my%20venue" class="contact-link">
         <div class="contact-link-icon">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         </div>
         <div class="contact-link-text">
           <div class="contact-link-label">Email</div>
@@ -1575,7 +783,7 @@
       </a>
       <a href="https://www.linkedin.com/in/john-digital-specialist/" target="_blank" rel="noopener noreferrer" class="contact-link">
         <div class="contact-link-icon">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </div>
         <div class="contact-link-text">
           <div class="contact-link-label">LinkedIn</div>
@@ -1585,90 +793,135 @@
     </div>
   </div>
 </section>
+<!-- /SHARED:contact -->
 
+<!-- SHARED:footer -->
 <footer>
-  John · Performance Marketer · Bangkok, Thailand · 2026
+  <div class="footer-inner">
+    <div>John · Paid media for hospitality · Bangkok, Thailand · GMT+7</div>
+    <ul class="footer-links">
+      <li><a href="case-studies.html">Case studies</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="https://wa.me/66994928394" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+      <li><a href="mailto:htetarkarz1024@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/john-digital-specialist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
+    <div>&copy; 2026 John</div>
+  </div>
 </footer>
+<!-- /SHARED:footer -->
 
+<!-- SHARED:cta -->
+<a class="mobile-cta" href="https://wa.me/66994928394?text=Hi%20John%2C%20I%20run%20%5Bvenue%5D%20in%20%5Bcity%5D.%20I%27d%20like%20to%20talk%20about%20paid%20media%20for%20it." target="_blank" rel="noopener noreferrer">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+  Message me on WhatsApp
+</a>
+<!-- /SHARED:cta -->
+
+<!-- SHARED:script -->
 <script>
-  // ── SCROLL ANIMATIONS ──
-  const fadeEls = document.querySelectorAll('.fade-in');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  fadeEls.forEach(el => observer.observe(el));
+(function () {
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ── COUNTER ANIMATIONS ──
-  function animateCounter(el) {
-    const target = parseFloat(el.dataset.target);
-    const prefix = el.dataset.prefix || '';
-    const suffix = el.dataset.suffix || '';
-    const decimal = parseInt(el.dataset.decimal) || 0;
-    const duration = 1600;
-    const startTime = performance.now();
+  // Reveal on scroll. Elements are only hidden when the <html> has the "js" class,
+  // so the page reads fully without JavaScript.
+  var fadeEls = document.querySelectorAll('.fade-in');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var fadeObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    fadeEls.forEach(function (el) { fadeObs.observe(el); });
+  } else {
+    fadeEls.forEach(function (el) { el.classList.add('visible'); });
+  }
 
-    function update(now) {
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      const current = target * eased;
-      el.textContent = prefix + current.toFixed(decimal) + suffix;
-      if (progress < 1) requestAnimationFrame(update);
+  // Count-up for big numbers. The final value is already in the HTML, so it reads
+  // correctly without JS, in print and with reduced motion. Runs once per element.
+  function countUp(el) {
+    var target = parseFloat(el.dataset.target);
+    if (isNaN(target)) return;
+    var decimals = parseInt(el.dataset.decimals || '0', 10);
+    var fmt = new Intl.NumberFormat('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals, useGrouping: el.dataset.group === '1' });
+    var pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+    var finalText = el.textContent;
+    var start = performance.now(), duration = 1400;
+    function tick(now) {
+      var p = Math.min(Math.max(0, (now - start) / duration), 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = p < 1 ? pre + fmt.format(target * eased) + suf : finalText;
+      if (p < 1) requestAnimationFrame(tick);
     }
-    requestAnimationFrame(update);
+    requestAnimationFrame(tick);
+  }
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var numObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { countUp(e.target); numObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.counter[data-target]').forEach(function (el) { numObs.observe(el); });
   }
 
-  const counterEls = document.querySelectorAll('.counter');
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        animateCounter(e.target);
-        counterObserver.unobserve(e.target);
-      }
+  // Mobile menu: the nav sits above the overlay so the X stays tappable;
+  // Escape closes; focus moves into the menu and back; page content is inert while open.
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var inertEls = [document.getElementById('main'), document.getElementById('contact'), document.querySelector('footer')].filter(Boolean);
+  function setMenu(open) {
+    hamburger.classList.toggle('open', open);
+    mobileMenu.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.classList.toggle('menu-open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    inertEls.forEach(function (el) { if (open) { el.setAttribute('inert', ''); } else { el.removeAttribute('inert'); } });
+    if (open) { var first = mobileMenu.querySelector('a'); if (first) first.focus(); }
+  }
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function () {
+      var open = !mobileMenu.classList.contains('open');
+      setMenu(open);
+      if (!open) hamburger.focus();
     });
-  }, { threshold: 0.5 });
-  counterEls.forEach(el => counterObserver.observe(el));
-
-  // ── INITIAL HERO ANIMATIONS (no scroll needed) ──
-  window.addEventListener('load', () => {
-    counterEls.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) animateCounter(el);
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { setMenu(false); });
     });
-  });
-
-  // ── HAMBURGER MENU ──
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
-    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-  });
-  document.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      mobileMenu.classList.remove('open');
-      document.body.style.overflow = '';
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) { setMenu(false); hamburger.focus(); }
     });
-  });
-
-  // Hero dot-pattern mouse tracking
-  const heroSection = document.getElementById('hero');
-  const dotHoverEl  = document.getElementById('heroDotHover');
-  if (heroSection && dotHoverEl) {
-    heroSection.addEventListener('mousemove', (e) => {
-      const rect = heroSection.getBoundingClientRect();
-      dotHoverEl.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
-      dotHoverEl.style.setProperty('--my', (e.clientY - rect.top)  + 'px');
+    var wide = window.matchMedia('(min-width: 769px)');
+    (wide.addEventListener || wide.addListener).call(wide, 'change', function (e) {
+      if (e.matches && mobileMenu.classList.contains('open')) setMenu(false);
     });
   }
+
+  // Hide the sticky WhatsApp bar while a page-level WhatsApp button is already on screen.
+  var inlineCtas = document.querySelectorAll('.hero-cta .btn-primary, .contact-link.primary, .work-cta .btn-primary, .case-cta .btn-primary');
+  if (inlineCtas.length && 'IntersectionObserver' in window) {
+    var ctaState = new Map();
+    var ctaObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { ctaState.set(e.target, e.isIntersecting); });
+      var anyVisible = false;
+      ctaState.forEach(function (v) { if (v) anyVisible = true; });
+      document.body.classList.toggle('cta-in-view', anyVisible);
+    }, { threshold: 0.5 });
+    inlineCtas.forEach(function (el) { ctaObs.observe(el); });
+  }
+
+  // Pause control for the logo strip (WCAG 2.2.2).
+  var pauseBtn = document.getElementById('marqueePause');
+  var track = document.getElementById('marqueeTrack');
+  if (pauseBtn && track) {
+    pauseBtn.addEventListener('click', function () {
+      var paused = track.classList.toggle('paused');
+      pauseBtn.textContent = paused ? 'Play' : 'Pause';
+    });
+  }
+})();
 </script>
+<!-- /SHARED:script -->
 
 </body>
 </html>
