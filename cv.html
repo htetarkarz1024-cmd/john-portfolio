@@ -75,11 +75,11 @@
   .skip:focus { top: 1rem; }
 
   /* ── REVEAL ON SCROLL (only when JS is running) ── */
-  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease, background 0.25s; }
   .js .fade-in.visible { opacity: 1; transform: none; }
-  .js .fade-in.d1 { transition-delay: 0.08s; }
-  .js .fade-in.d2 { transition-delay: 0.16s; }
-  .js .fade-in.d3 { transition-delay: 0.24s; }
+  .js .fade-in.d1 { transition-delay: 0.08s, 0.08s, 0s; }
+  .js .fade-in.d2 { transition-delay: 0.16s, 0.16s, 0s; }
+  .js .fade-in.d3 { transition-delay: 0.24s, 0.24s, 0s; }
 
   /* ── NAV ── */
   #siteNav {
@@ -124,11 +124,11 @@
     padding: calc(var(--nav-h) + 1.5rem) 1.5rem 2rem;
     flex-direction: column; justify-content: center; gap: 1.3rem; overflow-y: auto;
   }
-  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
   .mobile-menu.open { display: flex; }
   .mobile-menu a { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; line-height: 1.1; }
   .mobile-menu a:hover { color: var(--red); }
   .mobile-menu .btn { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 700; letter-spacing: 0; margin-top: 0.6rem; align-self: stretch; }
+  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
   body.menu-open .mobile-cta, body.cta-in-view .mobile-cta { display: none !important; }
 
   /* ── BUTTONS ── */
@@ -385,6 +385,10 @@
   @media print {
     #siteNav, .mobile-menu, .mobile-cta, .marquee-pause { display: none; }
     #hero, #clients, #contact, footer, .logo-tile, .btn-primary { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .hero-rise { animation: none; }
+    .marquee-row { mask-image: none; -webkit-mask-image: none; }
+    .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+    .logo-card[data-dup] { display: none; }
     #hero { min-height: auto; padding: 40px 2rem; }
     .js .fade-in { opacity: 1; transform: none; }
     section { padding: 40px 2rem; }

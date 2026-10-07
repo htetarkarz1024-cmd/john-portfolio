@@ -77,11 +77,11 @@
   .skip:focus { top: 1rem; }
 
   /* ── REVEAL ON SCROLL (only when JS is running) ── */
-  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease, background 0.25s; }
   .js .fade-in.visible { opacity: 1; transform: none; }
-  .js .fade-in.d1 { transition-delay: 0.08s; }
-  .js .fade-in.d2 { transition-delay: 0.16s; }
-  .js .fade-in.d3 { transition-delay: 0.24s; }
+  .js .fade-in.d1 { transition-delay: 0.08s, 0.08s, 0s; }
+  .js .fade-in.d2 { transition-delay: 0.16s, 0.16s, 0s; }
+  .js .fade-in.d3 { transition-delay: 0.24s, 0.24s, 0s; }
 
   /* ── NAV ── */
   #siteNav {
@@ -126,11 +126,11 @@
     padding: calc(var(--nav-h) + 1.5rem) 1.5rem 2rem;
     flex-direction: column; justify-content: center; gap: 1.3rem; overflow-y: auto;
   }
-  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
   .mobile-menu.open { display: flex; }
   .mobile-menu a { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; line-height: 1.1; }
   .mobile-menu a:hover { color: var(--red); }
   .mobile-menu .btn { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 700; letter-spacing: 0; margin-top: 0.6rem; align-self: stretch; }
+  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
   body.menu-open .mobile-cta, body.cta-in-view .mobile-cta { display: none !important; }
 
   /* ── BUTTONS ── */
@@ -387,6 +387,10 @@
   @media print {
     #siteNav, .mobile-menu, .mobile-cta, .marquee-pause { display: none; }
     #hero, #clients, #contact, footer, .logo-tile, .btn-primary { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .hero-rise { animation: none; }
+    .marquee-row { mask-image: none; -webkit-mask-image: none; }
+    .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+    .logo-card[data-dup] { display: none; }
     #hero { min-height: auto; padding: 40px 2rem; }
     .js .fade-in { opacity: 1; transform: none; }
     section { padding: 40px 2rem; }
@@ -468,33 +472,33 @@
   <p class="clients-label">Campaigns for venues at <strong>Anantara Siam Bangkok</strong> · <strong>SO/ Bangkok</strong> · <strong>Pullman Phuket Karon</strong></p>
   <div class="marquee-row">
     <div class="marquee-track" id="marqueeTrack">
-      <div class="logo-card"><img src="John%20Website%20Images/strip/World Gourmet Festival.webp" alt="World Gourmet Festival" width="63" height="67" style="width:63px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/Carpe Diem.webp" alt="Carpe Diem" width="58" height="72" style="width:58px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/Iris and Wild Iris.webp" alt="Iris &amp; Wild Iris" width="125" height="34" style="width:125px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/World%20Gourmet%20Festival.webp" alt="World Gourmet Festival" width="63" height="67" style="width:63px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Carpe%20Diem.webp" alt="Carpe Diem" width="58" height="72" style="width:58px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Iris%20and%20Wild%20Iris.webp" alt="Iris &amp; Wild Iris" width="125" height="34" style="width:125px"></div>
       <div class="logo-card"><img src="John%20Website%20Images/strip/Fira.webp" alt="Fira Beach Club" width="111" height="38" style="width:111px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/Thai Thai.webp" alt="Thai Thai" width="79" height="53" style="width:79px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Thai%20Thai.webp" alt="Thai Thai" width="79" height="53" style="width:79px"></div>
       <div class="logo-card"><img src="John%20Website%20Images/strip/Madison.webp" alt="Madison Steak Avenue" width="111" height="38" style="width:111px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/Hug Samui.webp" alt="Hug Samui" width="67" height="63" style="width:67px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/SImba Sea Trips.webp" alt="Simba Sea Trips" width="72" height="58" style="width:72px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/ARNA Spa.webp" alt="ARNA Oceanic Wellness Spa" width="104" height="41" style="width:104px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Hug%20Samui.webp" alt="Hug Samui" width="67" height="63" style="width:67px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/SImba%20Sea%20Trips.webp" alt="Simba Sea Trips" width="72" height="58" style="width:72px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/ARNA%20Spa.webp" alt="ARNA Oceanic Wellness Spa" width="104" height="41" style="width:104px"></div>
       <div class="logo-card"><img src="John%20Website%20Images/strip/Tabu.webp" alt="Tabu" width="102" height="41" style="width:102px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/Xian Yuan.webp" alt="Xian Yuan" width="74" height="57" style="width:74px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Xian%20Yuan.webp" alt="Xian Yuan" width="74" height="57" style="width:74px"></div>
       <div class="logo-card"><img src="John%20Website%20Images/strip/Yona.webp" alt="Yona" width="92" height="46" style="width:92px"></div>
-      <div class="logo-card"><img src="John%20Website%20Images/strip/Marbela beach.webp" alt="Marbela Beach Club" width="71" height="60" style="width:71px"></div>
+      <div class="logo-card"><img src="John%20Website%20Images/strip/Marbela%20beach.webp" alt="Marbela Beach Club" width="71" height="60" style="width:71px"></div>
       <div class="logo-card"><img src="John%20Website%20Images/strip/Savayna.webp" alt="Savaya" width="75" height="55" style="width:75px"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/World Gourmet Festival.webp" alt="" aria-hidden="true" width="63" height="67" style="width:63px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Carpe Diem.webp" alt="" aria-hidden="true" width="58" height="72" style="width:58px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Iris and Wild Iris.webp" alt="" aria-hidden="true" width="125" height="34" style="width:125px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/World%20Gourmet%20Festival.webp" alt="" aria-hidden="true" width="63" height="67" style="width:63px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Carpe%20Diem.webp" alt="" aria-hidden="true" width="58" height="72" style="width:58px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Iris%20and%20Wild%20Iris.webp" alt="" aria-hidden="true" width="125" height="34" style="width:125px" loading="lazy"></div>
       <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Fira.webp" alt="" aria-hidden="true" width="111" height="38" style="width:111px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Thai Thai.webp" alt="" aria-hidden="true" width="79" height="53" style="width:79px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Thai%20Thai.webp" alt="" aria-hidden="true" width="79" height="53" style="width:79px" loading="lazy"></div>
       <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Madison.webp" alt="" aria-hidden="true" width="111" height="38" style="width:111px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Hug Samui.webp" alt="" aria-hidden="true" width="67" height="63" style="width:67px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/SImba Sea Trips.webp" alt="" aria-hidden="true" width="72" height="58" style="width:72px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/ARNA Spa.webp" alt="" aria-hidden="true" width="104" height="41" style="width:104px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Hug%20Samui.webp" alt="" aria-hidden="true" width="67" height="63" style="width:67px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/SImba%20Sea%20Trips.webp" alt="" aria-hidden="true" width="72" height="58" style="width:72px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/ARNA%20Spa.webp" alt="" aria-hidden="true" width="104" height="41" style="width:104px" loading="lazy"></div>
       <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Tabu.webp" alt="" aria-hidden="true" width="102" height="41" style="width:102px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Xian Yuan.webp" alt="" aria-hidden="true" width="74" height="57" style="width:74px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Xian%20Yuan.webp" alt="" aria-hidden="true" width="74" height="57" style="width:74px" loading="lazy"></div>
       <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Yona.webp" alt="" aria-hidden="true" width="92" height="46" style="width:92px" loading="lazy"></div>
-      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Marbela beach.webp" alt="" aria-hidden="true" width="71" height="60" style="width:71px" loading="lazy"></div>
+      <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Marbela%20beach.webp" alt="" aria-hidden="true" width="71" height="60" style="width:71px" loading="lazy"></div>
       <div class="logo-card" data-dup><img src="John%20Website%20Images/strip/Savayna.webp" alt="" aria-hidden="true" width="75" height="55" style="width:75px" loading="lazy"></div>
     </div>
   </div>
@@ -515,7 +519,7 @@
 
       <a class="card fade-in" href="case-studies.html#world-gourmet-festival">
         <div class="card-head">
-          <div class="logo-tile"><img src="John%20Website%20Images/strip/World Gourmet Festival.webp" alt="" width="32" height="34" style="width:32px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/World%20Gourmet%20Festival.webp" alt="" width="32" height="34" style="width:32px" loading="lazy" decoding="async"></div>
           <div class="badges"><span class="badge">Meta</span></div>
         </div>
         <div class="card-name">World Gourmet Festival 2026 <span class="card-venue">Anantara Siam Bangkok</span></div>
@@ -530,7 +534,7 @@
 
       <a class="card fade-in d1" href="case-studies.html#iris-wild-iris">
         <div class="card-head">
-          <div class="logo-tile"><img src="John%20Website%20Images/strip/Iris and Wild Iris.webp" alt="" width="46" height="12" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Iris%20and%20Wild%20Iris.webp" alt="" width="46" height="12" style="width:46px" loading="lazy" decoding="async"></div>
           <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
         </div>
         <div class="card-name">Iris &amp; Wild Iris <span class="card-venue">SO/ Bangkok</span></div>
@@ -545,7 +549,7 @@
 
       <a class="card fade-in d2" href="case-studies.html#thai-thai">
         <div class="card-head">
-          <div class="logo-tile"><img src="John%20Website%20Images/strip/Thai Thai.webp" alt="" width="40" height="27" style="width:40px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Thai%20Thai.webp" alt="" width="40" height="27" style="width:40px" loading="lazy" decoding="async"></div>
           <div class="badges"><span class="badge">Meta</span></div>
         </div>
         <div class="card-name">Thai Thai <span class="card-venue">Pullman Phuket Karon</span></div>
@@ -590,7 +594,7 @@
 
       <a class="card fade-in d1" href="case-studies.html#xian-yuan">
         <div class="card-head">
-          <div class="logo-tile"><img src="John%20Website%20Images/strip/Xian Yuan.webp" alt="" width="38" height="29" style="width:38px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Xian%20Yuan.webp" alt="" width="38" height="29" style="width:38px" loading="lazy" decoding="async"></div>
           <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
         </div>
         <div class="card-name">Xian Yuan <span class="card-venue">Modern Cantonese · Silom, Bangkok</span></div>
@@ -605,7 +609,7 @@
 
       <a class="card fade-in d2" href="case-studies.html#hug-samui">
         <div class="card-head">
-          <div class="logo-tile"><img src="John%20Website%20Images/strip/Hug Samui.webp" alt="" width="34" height="32" style="width:34px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Hug%20Samui.webp" alt="" width="34" height="32" style="width:34px" loading="lazy" decoding="async"></div>
           <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
         </div>
         <div class="card-name">Hug Samui <span class="card-venue">Bang Por Beach, Koh Samui</span></div>
@@ -620,7 +624,7 @@
 
       <a class="card fade-in d3" href="case-studies.html#arna-spa">
         <div class="card-head">
-          <div class="logo-tile"><img src="John%20Website%20Images/strip/ARNA Spa.webp" alt="" width="46" height="18" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/ARNA%20Spa.webp" alt="" width="46" height="18" style="width:46px" loading="lazy" decoding="async"></div>
           <div class="badges"><span class="badge">Meta</span><span class="badge">Google</span></div>
         </div>
         <div class="card-name">ARNA Oceanic Wellness Spa <span class="card-venue">Chaweng Beach, Koh Samui</span></div>

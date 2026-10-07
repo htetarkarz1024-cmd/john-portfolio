@@ -75,11 +75,11 @@
   .skip:focus { top: 1rem; }
 
   /* ── REVEAL ON SCROLL (only when JS is running) ── */
-  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .js .fade-in { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease, background 0.25s; }
   .js .fade-in.visible { opacity: 1; transform: none; }
-  .js .fade-in.d1 { transition-delay: 0.08s; }
-  .js .fade-in.d2 { transition-delay: 0.16s; }
-  .js .fade-in.d3 { transition-delay: 0.24s; }
+  .js .fade-in.d1 { transition-delay: 0.08s, 0.08s, 0s; }
+  .js .fade-in.d2 { transition-delay: 0.16s, 0.16s, 0s; }
+  .js .fade-in.d3 { transition-delay: 0.24s, 0.24s, 0s; }
 
   /* ── NAV ── */
   #siteNav {
@@ -124,11 +124,11 @@
     padding: calc(var(--nav-h) + 1.5rem) 1.5rem 2rem;
     flex-direction: column; justify-content: center; gap: 1.3rem; overflow-y: auto;
   }
-  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
   .mobile-menu.open { display: flex; }
   .mobile-menu a { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; line-height: 1.1; }
   .mobile-menu a:hover { color: var(--red); }
   .mobile-menu .btn { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 700; letter-spacing: 0; margin-top: 0.6rem; align-self: stretch; }
+  @media (max-height: 600px) { .mobile-menu { justify-content: flex-start; gap: 0.9rem; } .mobile-menu a { font-size: 1.5rem; } }
   body.menu-open .mobile-cta, body.cta-in-view .mobile-cta { display: none !important; }
 
   /* ── BUTTONS ── */
@@ -385,6 +385,10 @@
   @media print {
     #siteNav, .mobile-menu, .mobile-cta, .marquee-pause { display: none; }
     #hero, #clients, #contact, footer, .logo-tile, .btn-primary { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .hero-rise { animation: none; }
+    .marquee-row { mask-image: none; -webkit-mask-image: none; }
+    .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+    .logo-card[data-dup] { display: none; }
     #hero { min-height: auto; padding: 40px 2rem; }
     .js .fade-in { opacity: 1; transform: none; }
     section { padding: 40px 2rem; }
@@ -588,7 +592,7 @@
     <div class="cs-index">
       <a class="cs-card fade-in" href="#world-gourmet-festival">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/World Gourmet Festival.webp" alt="" width="33" height="35" style="width:33px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/World%20Gourmet%20Festival.webp" alt="" width="33" height="35" style="width:33px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 01</span>
         </div>
         <div class="cs-card-brand">World Gourmet Festival 2026<span class="cs-card-venue">Anantara Siam Bangkok</span></div>
@@ -597,7 +601,7 @@
       </a>
       <a class="cs-card fade-in d1" href="#iris-wild-iris">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/Iris and Wild Iris.webp" alt="" width="46" height="12" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Iris%20and%20Wild%20Iris.webp" alt="" width="46" height="12" style="width:46px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 02</span>
         </div>
         <div class="cs-card-brand">Iris &amp; Wild Iris<span class="cs-card-venue">SO/ Bangkok</span></div>
@@ -606,7 +610,7 @@
       </a>
       <a class="cs-card fade-in d2" href="#thai-thai">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/Thai Thai.webp" alt="" width="41" height="28" style="width:41px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Thai%20Thai.webp" alt="" width="41" height="28" style="width:41px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 03</span>
         </div>
         <div class="cs-card-brand">Thai Thai<span class="cs-card-venue">Pullman Phuket Karon</span></div>
@@ -615,7 +619,7 @@
       </a>
       <a class="cs-card fade-in d3" href="#fira-phuket">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/Fira.webp" alt="" width="46" height="16" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Fira.webp" alt="" width="46" height="16" style="width:46px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 04</span>
         </div>
         <div class="cs-card-brand">Fira Beach Club<span class="cs-card-venue">Kata, Phuket</span></div>
@@ -624,7 +628,7 @@
       </a>
       <a class="cs-card fade-in" href="#madison-steak-avenue">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/Madison.webp" alt="" width="46" height="16" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Madison.webp" alt="" width="46" height="16" style="width:46px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 05</span>
         </div>
         <div class="cs-card-brand">Madison Steak Avenue<span class="cs-card-venue">Anantara Siam Bangkok</span></div>
@@ -633,7 +637,7 @@
       </a>
       <a class="cs-card fade-in d1" href="#xian-yuan">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/Xian Yuan.webp" alt="" width="39" height="30" style="width:39px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Xian%20Yuan.webp" alt="" width="39" height="30" style="width:39px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 06</span>
         </div>
         <div class="cs-card-brand">Xian Yuan<span class="cs-card-venue">Central Park, Silom, Bangkok</span></div>
@@ -642,7 +646,7 @@
       </a>
       <a class="cs-card fade-in d2" href="#hug-samui">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/Hug Samui.webp" alt="" width="35" height="33" style="width:35px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/Hug%20Samui.webp" alt="" width="35" height="33" style="width:35px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 07</span>
         </div>
         <div class="cs-card-brand">Hug Samui<span class="cs-card-venue">Bang Por Beach, Koh Samui</span></div>
@@ -651,7 +655,7 @@
       </a>
       <a class="cs-card fade-in d3" href="#arna-spa">
         <div class="cs-card-head">
-          <div class="logo-tile"><img src="John Website Images/strip/ARNA Spa.webp" alt="" width="46" height="18" style="width:46px" loading="lazy" decoding="async"></div>
+          <div class="logo-tile"><img src="John%20Website%20Images/strip/ARNA%20Spa.webp" alt="" width="46" height="18" style="width:46px" loading="lazy" decoding="async"></div>
           <span class="cs-card-num">Case 08</span>
         </div>
         <div class="cs-card-brand">ARNA Oceanic Wellness Spa<span class="cs-card-venue">Chaweng Beach, Koh Samui</span></div>
@@ -668,7 +672,7 @@
   <div class="case-ghost" aria-hidden="true">01</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/World Gourmet Festival.webp" alt="" width="46" height="49" style="width:46px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/World%20Gourmet%20Festival.webp" alt="" width="46" height="49" style="width:46px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 01 / 08</div>
         <div class="case-brand"><strong>World Gourmet Festival 2026</strong> &middot; Anantara Siam Bangkok</div>
@@ -733,7 +737,7 @@
   <div class="case-ghost" aria-hidden="true">02</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/Iris and Wild Iris.webp" alt="" width="66" height="18" style="width:66px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/Iris%20and%20Wild%20Iris.webp" alt="" width="66" height="18" style="width:66px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 02 / 08</div>
         <div class="case-brand"><strong>Iris &amp; Wild Iris</strong> &middot; SO/ Bangkok</div>
@@ -798,7 +802,7 @@
   <div class="case-ghost" aria-hidden="true">03</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/Thai Thai.webp" alt="" width="58" height="39" style="width:58px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/Thai%20Thai.webp" alt="" width="58" height="39" style="width:58px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 03 / 08</div>
         <div class="case-brand"><strong>Thai Thai</strong> &middot; Pullman Phuket Karon</div>
@@ -862,7 +866,7 @@
   <div class="case-ghost" aria-hidden="true">04</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/Fira.webp" alt="" width="66" height="22" style="width:66px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/Fira.webp" alt="" width="66" height="22" style="width:66px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 04 / 08</div>
         <div class="case-brand"><strong>Fira Beach Club</strong> &middot; Kata, Phuket</div>
@@ -927,7 +931,7 @@
   <div class="case-ghost" aria-hidden="true">05</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/Madison.webp" alt="" width="66" height="22" style="width:66px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/Madison.webp" alt="" width="66" height="22" style="width:66px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 05 / 08</div>
         <div class="case-brand"><strong>Madison Steak Avenue</strong> &middot; Anantara Siam Bangkok</div>
@@ -992,7 +996,7 @@
   <div class="case-ghost" aria-hidden="true">06</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/Xian Yuan.webp" alt="" width="55" height="43" style="width:55px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/Xian%20Yuan.webp" alt="" width="55" height="43" style="width:55px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 06 / 08</div>
         <div class="case-brand"><strong>Xian Yuan</strong> &middot; Central Park, Silom, Bangkok</div>
@@ -1057,7 +1061,7 @@
   <div class="case-ghost" aria-hidden="true">07</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/Hug Samui.webp" alt="" width="49" height="46" style="width:49px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/Hug%20Samui.webp" alt="" width="49" height="46" style="width:49px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 07 / 08</div>
         <div class="case-brand"><strong>Hug Samui</strong> &middot; Bang Por Beach, Koh Samui</div>
@@ -1121,7 +1125,7 @@
   <div class="case-ghost" aria-hidden="true">08</div>
   <div class="section-inner">
     <div class="case-top fade-in">
-      <div class="logo-tile"><img src="John Website Images/strip/ARNA Spa.webp" alt="" width="66" height="26" style="width:66px" loading="lazy" decoding="async"></div>
+      <div class="logo-tile"><img src="John%20Website%20Images/strip/ARNA%20Spa.webp" alt="" width="66" height="26" style="width:66px" loading="lazy" decoding="async"></div>
       <div>
         <div class="case-kicker">Case 08 / 08</div>
         <div class="case-brand"><strong>ARNA Oceanic Wellness Spa</strong> &middot; Chaweng Beach, Koh Samui</div>
